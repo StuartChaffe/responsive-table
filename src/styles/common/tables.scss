@@ -1,0 +1,70 @@
+th, td {
+	text-align: left;
+	vertical-align: top;
+}
+
+.benefits-table {
+	overflow-x: auto;
+
+	table, th, td {
+		border: 1px solid white;
+		text-align: center;
+		padding: 5px 0;
+	}
+	thead th {
+		background: grey;
+	}
+	td:first-child, tr th:first-child {
+		text-align: left;
+		padding-left: 5px;
+	}
+	td {
+		// min-width: 80px;
+	}
+
+	tr:nth-child(-n+10) + tr:nth-child(even) {
+		background: #F5F8F2;
+	}
+	tr:nth-child(-n+10) + tr:nth-child(odd) {
+		background: #EDF3E5;
+	}
+	tr:nth-child(n+11) + tr:nth-child(even) {
+		background: #F3F9FA;
+	}
+	tr:nth-child(n+11) + tr:nth-child(odd) {
+		background: #E7F4F5;
+	}
+	tr:nth-child(n+17) + tr:nth-child(even) {
+		background: #F4F5F9;
+	}
+	tr:nth-child(n+17) + tr:nth-child(odd) {
+		background: #E9ECF3;
+	}
+
+	// td:nth-child(5), th:nth-child(5) {
+	// 	background: red;
+	// }
+
+	.most-popular {
+		background: #E94E1B;
+		display: block;
+		color: white;
+	}
+	.most-popular-highlight td {
+		padding: 0;
+	}
+	.sub-header th {
+		border-bottom: 1px solid grey;
+		background: white;
+		padding-top: 15px;
+	}
+	.small {
+		font-size: 60%;
+		line-height: 0px;
+	}
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}

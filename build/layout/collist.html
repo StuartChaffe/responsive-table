@@ -1,0 +1,100 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jazcss | Collist</title>
+	<link rel="shortcut icon" type="image/png" href="/favicon.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.5.1/css/pikaday.min.css">
+	<link rel="stylesheet" href="/core.min.css">
+	<link rel="stylesheet" href="/styles.min.css">
+	<!--[if lte IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="remodal-bg">
+		<main role="main" class="wrapped">
+					<div class="padding-h-xl padding-v-md">
+					<h1>Collist</h1>
+		<p>
+			Collist is a responsive layout system that allows you to arrange a list of elements in a grid-like fashion. To use it, simply add the <code>collist</code> class to a <code>div</code>. Like col, class <code>row-n</code> (where <code>n</code> is 1-12) provides a base width. You can then follow this with classes that specify how many items to display per row at particular breakpoints. For example, the class <code>md-row-3</code> will show 3 items per row for viewport widths greater than the <coede>md</code> breakpoint. Larger breakpoints take precedence over smaller ones.
+		</p>
+
+		<code>collist row-1 xs-row-2 sm-row-3 md-row-4</code>:
+		<div class="section padding-v-xs">
+			<div class="collist row-1 xs-row-2 sm-row-3 md-row-4">
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some more text to show match heights</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+			</div>
+		</div>
+
+		<br>
+
+		<code>collist row-1 xs-row-2 sm-row-3 md-row-4 gutter-xs</code>:
+		<div class="section padding-v-xs">
+			<div class="collist row-1 xs-row-2 sm-row-3 md-row-4 gutter-xs">
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some more text to show match heights</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+			</div>
+		</div>
+
+		<br>
+
+		<code>collist row-1 xs-row-2 sm-row-3 md-row-4 gutter-xl</code>:
+		<div class="section padding-v-xs">
+			<div class="collist row-1 xs-row-2 sm-row-3 md-row-4 gutter-xl">
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some more text to show match heights</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+				<div><div class="jazcss-item">Some text</div></div>
+			</div>
+		</div>
+
+		</div>
+
+		</main>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.5.1/pikaday.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+	<script src="/scripts.min.js"></script>
+	<script>
+	$('table tr td:nth-child('+ownerIndex+')')
+
+	</script>
+
+</body>
+</html>

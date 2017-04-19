@@ -1,0 +1,37 @@
+{{#extend "generic" title="Homepage"}}
+	{{#content "content"}}
+		<h1>Jazcss</h1>
+		<p>
+			Jazcss is my frontend framework that I use whenever I start a new project. It contains all the usual things you'd expect from any framework, plus a few extras. It's built to be responsive, customisable and semantically correct as much as possible. This site is using the latest version of Jazcss and shows off all the things it can do.</p><p>It's worth noting that you really shouldn't consider using this framework unless you can be sure gzip will be enabled on the server. This is because Jazcss offers a shit ton of optional spacing classes to make fine-tuning layouts easier. They're implemented using iterative SCSS <code>@each</code> blocks. This pushes the size of the framework way up to around 200KB, but because it's all very similar code, gzip compression brings it down by about 95% making it really lightweight afterwards.
+		</p>
+		<p>
+			The heavy stuff is split into its own CSS file, <a target="_blank" href="/core.min.css">core.min.css</a>. Huge, right? Bung it in an online GZIP compressor like <a href="http://refresh-sf.com/" target="_blank">this one</a>, hit the CSS button and see the magic.
+		</p>
+		<h2>Tech</h2>
+		<ul>
+			<li><a href="http://gulpjs.com/"><strong>Gulp</strong></a> - JS task runner. This is the master file of Jazcss and is what brings everything together to serve up a built site</li>
+			<li><a href="http://handlebarsjs.com/"><strong>Handlebars</strong></a> - HTML templating engine. Makes it easy to reuse components on multiple pages or create page layouts</li>
+			<li><a href="https://browsersync.io/"><strong>Browsersync</strong></a> - Live browser reloading, CSS injection, static site serving, session synchronisation</li>
+			<li><a href="http://sass-lang.com/"><strong>Sass</strong></a> - CSS precompiler providing advanced CSS functionality. Jazcss uses SCSS instead of Sass itself</li>
+		</ul>
+		<h2>Directory structure</h2>
+		<ul>
+			<li><code>src/pages</code> - The main view files which get rendered into <code>html</code> files with the same name when built</li>
+			<li><code>src/layouts</code> - Wrappers for pages. Contains placeholders which page files are rendered inside of</li>
+			<li><code>src/partials</code> - Individual component markup files. These can be used on pages and layouts using <code>&#123;&#123;&gt;header&#125;&#125;</code></li>
+			<li><code>src/styles</code> - Sass styles, described below</li>
+			<li><code>src/scripts</code> - JS scripts. Files in these directories are automatically concatenated and minified via gulp</li>
+			<li><code>src/images</code>, <code>src/videos</code>, <code>src/fonts</code> - These directories are directly copied into the build folder</li>
+			<li><code>.editorconfig</code> - See <a target="_blank" href="https://editorconfig.org/">EditorConfig.org</a>. Standardises formatting for project so tabs don't fight with spaces</li>
+		</ul>
+		<h2>Style structure</h2>
+		<ul>
+			<li><code>Base</code> - Contains core framework files and shouldn't need much changing other than <code>variables.scss</code></li>
+			<li><code>Helpers</code> - Classes that provide useful functionality. Shouldn't need changing</li>
+			<li><code>Layout</code> - Classes specifically focussed on element positioning. Shouldn't need changing</li>
+			<li><code>Common</code> - Style rules that target standard HTML elements such as <code>&lt;a&gt;</code>, <code>&lt;h1&gt;</code> etc</li>
+			<li><code>Components</code> - The bread and butter of your project. Every partial should have a corresponding file here</li>
+			<li><code>Vendor</code> - Shove all your dirty third-party CSS in here</li>
+		</ul>
+	{{/content}}
+{{/extend}}
