@@ -6,7 +6,7 @@ html, body{
 	height: 100%;
 }
 
-body{
+body {
 	font-family: $bodyFont;
 	color: $bodyTextColor;
 	background-color: $bodyBackgroundColor;
@@ -15,8 +15,8 @@ body{
 	-moz-osx-font-smoothing: grayscale;
 }
 
-main{
-	background-color: $mainBackgroundColor;
+main {
+	background-color: white;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;

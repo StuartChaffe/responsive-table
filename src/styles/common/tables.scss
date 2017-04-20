@@ -1,16 +1,17 @@
-body {
-	font-size: 14px;
-}
-th, td {
-	text-align: left;
-	vertical-align: top;
-}
-
 $healthy-orange: #e94e1b;
 $grounded-purple: #94a4c6;
 $open-blue: #89c7cf;
 $refreshing-green: #a5c27e;
 $confident-grey: #485459;
+
+body {
+	font-size: 13px;
+	color: #5d686e;
+}
+th, td {
+	text-align: left;
+	vertical-align: top;
+}
 
 .benefits-table {
 	overflow-x: auto;
@@ -20,6 +21,7 @@ $confident-grey: #485459;
 		border: 1px solid white;
 		text-align: center;
 		padding: 5px 0;
+		font-weight: bold;
 	}
 	thead th {
 		background: $confident-grey;
@@ -28,7 +30,7 @@ $confident-grey: #485459;
 	}
 	td:first-child, tr th:first-child {
 		text-align: left;
-		padding-left: 5px;
+		padding-left: 10px;
 	}
 
 	td:first-child {
@@ -68,7 +70,11 @@ $confident-grey: #485459;
 	}
 	th:nth-child(2), th:nth-child(3) {
 		width: 45px;
-		padding-top: 6px;
+		padding-top: 2px;
+	}
+
+	td:nth-child(2), td:nth-child(3) {
+		font-weight: 100;
 	}
 	th:nth-child(4) {
 		background: lighten($grounded-purple, 8%);
@@ -149,8 +155,8 @@ $confident-grey: #485459;
 		padding-top: 30px;
 	}
 	.small {
-		font-size: 70%;
-		line-height: 0px;
+		font-size: 80%;
+		line-height: 120%;
 	}
 }
 
