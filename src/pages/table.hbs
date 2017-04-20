@@ -1,6 +1,6 @@
 {{#extend "generic" title="Homepage"}}
 {{#content "content"}}
-	<h4>Benefits Table</h4>
+	{{!--<h4>Benefits Table</h4>--}}
 
 {{!--<div class="benefits-table">
 
@@ -98,21 +98,19 @@
 					<td colspan="2"></td>
 				</tr>
 				<tr>
-					<th scope="row">Cover type<br />Cost per month</th>
-					<th scope="col" width="60px;"><span class="small">benefit period</span></th>
-					<th scope="col" width="65px;"><span class="small">money back amount</span></th>
-					<th scope="col" class="column plan-level-1">Level 1 <br> <span>£6.20</span></th>
-					<th scope="col" class="column plan-level-2">Level 2 <br> <span>£12.95</span></th>
-					<th scope="col" class="column plan-level-3">Level 3 <br> <span>£19.20</span></th>
-					<th scope="col" class="column plan-level-4">Level 4 <br> <span>£26.85</span></th>
-					<th scope="col" class="column plan-level-5">Level 5 <br> <span>£39.30</span></th>
+					<th scope="row">Cover Benefits</th>
+					<th scope="col"><span class="small">Benefit period</span></th>
+					<th scope="col"><span class="small">Money back amount</span></th>
+					<th scope="col" class="column plan-level-1">Level 1 <br> <span>£6.20</span><br /> <button>select</button></th>
+					<th scope="col" class="column plan-level-2">Level 2 <br> <span>£12.95</span><br /> <button>select</button></th>
+					<th scope="col" class="column plan-level-3">Level 3 <br> <span>£19.20</span><br /> <button>select</button></th>
+					<th scope="col" class="column plan-level-4">Level 4 <br> <span>£26.85</span><br /> <button>select</button></th>
+					<th scope="col" class="column plan-level-5">Level 5 <br> <span>£39.30</span><br /> <button>select</button></th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr class="sub-header">
-					<th scope="row">Money Back</th>
-					<th scope="row"></th>
-					<th scope="row"></th>
+					<th scope="row" colspan="3">Claim money back for</th>
 					<th scope="row">Up to</th>
 					<th scope="row">Up to</th>
 					<th scope="row">Up to</th>
@@ -120,7 +118,7 @@
 					<th scope="row">Up to</th>
 				</tr>
 				<tr>
-					<td>Optical</td>
+					<td>Optical <a href="">i</a></td>
 					<td>2yr</td>
 					<td>100%</td>
 					<td>£45</td>
@@ -221,9 +219,7 @@
 				</tr>
 
 				<tr class="sub-header">
-					<th scope="row">Cash Payouts</th>
-					<th></th>
-					<th></th>
+					<th scope="row" colspan="3">Get cash payouts for</th>
 					<th></th>
 					<th></th>
 					<th></th>
@@ -272,9 +268,7 @@
 				</tr>
 
 				<tr class="sub-header">
-					<th scope="row">Health and Wellbeing</th>
-					<th></th>
-					<th></th>
+					<th scope="row" colspan="3">Health and wellbeing benefits</th>
 					<th></th>
 					<th></th>
 					<th></th>
@@ -337,12 +331,106 @@
 					<td></td>
 					<td>-</td>
 					<td>-</td>
-					<td>£15,000</td>
-					<td>£25,000</td>
-					<td>£50,000</td>
+					<td>Up to<br />£15,000</td>
+					<td>Up to<br />£25,000</td>
+					<td>Up to<br />£50,000</td>
+				</tr>
+				<tr class="children-header">
+					<th scope="row" colspan="8">Cover for your children (Included at no extra cost)</th>
+				</tr>
+				<tr class="sub-header">
+					<th scope="row">Money back - Shared between your dependent children</th>
+					<th scope="row"></th>
+					<th scope="row"></th>
+					<th scope="row">Up to</th>
+					<th scope="row">Up to</th>
+					<th scope="row">Up to</th>
+					<th scope="row">Up to</th>
+					<th scope="row">Up to</th>
+				</tr>
+				<tr>
+					<td>Optical</td>
+					<td>2yr</td>
+					<td>100%</td>
+					<td>£45</td>
+					<td>£90</td>
+					<td>£145</td>
+					<td>£205</td>
+					<td>£291</td>
+				</tr>
+				<tr>
+					<td>Dental</td>
+					<td>1yr</td>
+					<td>100%</td>
+					<td>£33</td>
+					<td>£75</td>
+					<td>£120</td>
+					<td>£160</td>
+					<td>£230</td>
+				</tr>
+				<tr>
+					<td>Dental Trauma</td>
+					<td>1yr</td>
+					<td>100%</td>
+					<td>£66</td>
+					<td>£150</td>
+					<td>£240</td>
+					<td>£320</td>
+					<td>£460</td>
+				</tr>
+				<tr class="sub-header">
+					<th scope="row">Cash payouts - For each dependent child</th>
+					<th scope="row"></th>
+					<th scope="row"></th>
+					<th scope="row"></th>
+					<th scope="row"></th>
+					<th scope="row"></th>
+					<th scope="row"></th>
+					<th scope="row"></th>
+				</tr>
+				<tr>
+					<td>In-patient</td>
+					<td>1yr</td>
+					<td></td>
+					<td>£5.50</td>
+					<td>£9</td>
+					<td>£16.50</td>
+					<td>£21</td>
+					<td>£33</td>
+				</tr>
+				<tr>
+					<td>Day Surgery</td>
+					<td>1yr</td>
+					<td></td>
+					<td>£6</td>
+					<td>£10</td>
+					<td>£18</td>
+					<td>£23</td>
+					<td>£36</td>
+				</tr>
+				<tr>
+					<td>Recuperation</td>
+					<td>2yr</td>
+					<td></td>
+					<td>£30</td>
+					<td>£70</td>
+					<td>£110</td>
+					<td>£135</td>
+					<td>£220</td>
 				</tr>
 			</tbody>
 		</table>
+		<div class="buy-bar">
+			<div class="buy-bar--inner">
+				<div>
+					<p>You have selected:<br />
+					<strong>Health Cash Plan Level 3, £19.20p/m</strong></p>
+				</div>
+				<div>
+					<button>Buy now</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 {{/content}}
