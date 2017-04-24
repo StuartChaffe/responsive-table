@@ -202,6 +202,9 @@ table {
 	width: 100%;
 }
 
+.benefits-table .sub-header th.is-active, tr td.is-active {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
 
 .plan-level {
 	&.plan-level-1 {
