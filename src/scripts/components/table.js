@@ -38,3 +38,8 @@ $('.plan-level').click(function(){
         $('.buy-bar--inner a').prop("href", link)    
     }
 });
+
+$('.buy-bar--close').click(function(){
+    $('.buy-bar').removeClass('is-active');
+    $('.plan-level').removeClass('is-active');    
+});
