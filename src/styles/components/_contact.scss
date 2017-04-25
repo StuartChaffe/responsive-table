@@ -1,0 +1,102 @@
+/* Contact Details */
+.cta-wrapper {
+  @media (min-width: 850px) {
+    padding: 0 48px;
+  }
+  margin-top: 30px;
+  padding: 0 5px;
+  margin: 0 auto 10px auto;
+  .grid_12 {
+    @media (max-width: 850px) {
+      margin-left: 0;
+    }
+  }
+}
+
+.contact-details-wrapper {
+  @media (min-width: 850px) {
+    padding:0 38px 0 49px;
+  }
+  padding:0 5px;
+}
+
+.contact-details {
+  padding: 0;
+  list-style-type: none;
+  div.email, 
+  div.phone, 
+  div.information, {
+    padding-top: 3px;
+  }
+  span {
+    font-size: 0.9375em;
+    color: $confident-grey;
+  }
+  p {
+    margin-bottom: 0;
+    @include co-txt-regular;
+    line-height: 1;
+    color: $healthy-orange;
+    a {
+      text-decoration: none;
+      font-size: 0.8em;
+    }
+  }
+  a {
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    -webkit-hyphens: auto; 
+    -ms-hyphens: auto; 
+    -moz-hyphens: auto; 
+    hyphens: auto; 
+    word-break: break-all; 
+    -ms-word-break: break-all; 
+    word-break: break-word;
+  }
+}
+
+.contact-details-horizontal {
+  padding: 0;
+  list-style-type: none;
+  span {
+    font-size: 0.9375em;
+    color: $confident-grey;
+  }
+  p {
+    margin-bottom: 0;
+    @include co-txt-regular;
+    line-height: 1;
+    color: $healthy-orange;
+    a {
+      text-decoration: none;
+      font-size: 0.8em;
+    }
+  }
+  li {
+    margin-right: 12px;
+    float: left;
+  }
+}
+
+.contact-method {
+  padding-bottom: 14px;
+}
+
+.contact-method-title {
+  padding: 10px 0 4px;
+  font-size: 1.2em;
+}
+
+.contact-emphasis-phone {
+  font-size: 20px;
+  @include co-txt-regular;
+}
+
+.fontsize-13px {
+  font-size: 13px;
+}
+
+/* Google maps */
+#map_canvas img {
+  max-width: none !important;
+}

@@ -1,0 +1,169 @@
+/* Search Results */
+.sfsearchResultTitle {
+  margin-bottom: 0;
+  /* Add a 'PDF' or 'Word' tag before the main link title on search results, to notify you that it will be a file download not a web page link */
+  a[href$=".doc"]:before,
+  a[href$=".docx"]:before,
+  a[href$=".pdf"]:before {
+    content:'PDF';
+    display: inline-block;
+    background: $bkg-grey-01;
+    font-size: 0.6em;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 0 7px 0 0;
+    position: relative;
+    top: -3px;
+  }
+  a[href$=".doc"]:before,
+  a[href$=".docx"]:before {  
+    content: 'Word';
+  }
+}
+
+.sfsearchResultSnippet {
+  display: none;
+}
+
+.sfsearchResultUrl {
+  margin-bottom: 1em; 
+  a {
+    color: $confident-grey;
+    font-size: 0.8em;
+    text-decoration: none;
+    &:hover{
+      color: $black;
+    }
+  }
+}
+
+/* Styling fix for the Kendo UI AutoComplete widget used on the search field in blog articles */
+.k-widget {
+  margin-top: 4px !important;
+}
+
+/* Search Pager */
+.sf_pagerNumeric {
+  text-align: center;
+  padding: 25px 0;
+  background-color: $background-grey;
+
+  @media (min-width: 850px) {
+		padding: 0;
+		background-color: #eeeeee;
+
+		.primary-box & {
+			background-color: #fff;
+			margin: 15px 0;
+		}
+	}
+
+  a {
+    padding: 5px 10px;
+    margin: 0 0.3em;
+    display: inline-block;
+    color: $responsible-grey;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+      color: $white;
+      background-color: $responsible-grey;  
+      transition: 0.15s;  
+    }
+    &.sf_PagerCurrent {
+      color: $white;
+      background-color: $responsible-grey;
+    }
+  }
+}
+
+.global-search {
+  @media (min-width: 850px) {
+    margin: 35px 0 0 0;
+    padding:0;
+  }
+  margin: 0;
+  padding: 0 13px;
+  width:100%;
+  .sfsearchLabel {
+    margin-right: 10px;
+    line-height: 2.7;
+  }
+  .sfsearchTxt {
+    border-right: none;
+    float:right;
+    width:80%;
+    width: calc(100% - 40px);
+  }
+  .sfsearchSubmit {
+    float:right;
+    text-decoration:none;
+    width: 40px;
+    border-left: none;
+    text-indent: -9999px;
+    background: $bkg-grey-02 url(/staticfiles/svg/search-sprite.svg) center 6px no-repeat;
+    background-position: center -25px;
+  }
+  &:hover {
+    input.headerSearch {
+      border-color: $healthy-orange; 
+      transition: border 0.15s;
+    }
+    .sfsearchSubmit {
+      background-color: $healthy-orange;
+      border-color: $healthy-orange;
+      background-position: center -25px;
+      transition: background-color 0.15s;
+    }
+  }
+}
+
+.search-large {
+  .sfsearchLabel {
+    margin-right: 10px;
+    line-height: 2.7;
+  }
+  input  {
+    transition: border 0.3s, background 0.3s;
+  }
+  ul {
+    @media (min-width: 850px) {
+      padding-left: 20px;
+      width: 660px;
+    }
+    margin: 15px auto 0 auto;
+    width: 100%;
+    float: left;
+    padding-left: 5px;
+    li {
+      float: left;
+      list-style-type:none;
+    }
+  }
+  .sfsearchTxt {
+    @media (min-width: 850px) {
+      max-width: 520px;
+      width: 520px;
+    }
+    max-width: 173px;
+  }
+  .sfsearchSubmit {
+    text-decoration:none;
+    width: 40px;
+    border-left: none;
+    text-indent: -9999px;
+    background: $bkg-grey-02 url(/staticfiles/svg/search-sprite.svg) center 6px no-repeat;
+    background-position: center -25px;
+    background-color: $healthy-orange;
+    border-color: $healthy-orange;
+    transition: background-color 0.15s;
+  }
+  input.sfsearchTxt {
+    border-color: $healthy-orange; 
+    transition: border 0.15s;
+  }
+}
+
+.lt-ie8 .global-search .sfsearchSubmit {
+  text-transform: capitalize;
+}

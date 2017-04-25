@@ -1,0 +1,200 @@
+/* Plan Selector */
+.plan-selector {
+  padding-left: 0;
+  list-style-type: none;
+  overflow: hidden;
+  li {
+    @media (min-width: 850px) {
+      width: 33.33%;
+      float: left;
+      border-right: 1px dotted $confident-grey;
+    }
+    margin-bottom: 0;
+    width: 100%;
+  }
+  a {
+    @media (min-width: 850px) {
+      margin: 0 20px;
+      text-align: center;
+    }
+    margin: 0 5px;
+    padding: 10px 0;
+    display: block;
+    @include co-txt-bold;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $confident-grey;
+    text-decoration: none;
+    &:hover, 
+    &:active, 
+    .selected {
+      background-color: $background-grey;
+    }
+    span {
+      font-size: 36px;
+      line-height: 0.8;
+    }
+  }
+  .last {
+    border: 0;
+  }
+}
+
+.lt-ie8 .plan-selector li {
+  width: 31%;
+}
+
+#plan-selector-step2 {
+  li {
+  @media (min-width: 850px) {
+    width: 20%;
+    margin-bottom: 0;
+  }
+    margin-bottom: 5px;
+  }
+  a {
+    @include co-txt-regular;
+    font-size: 16px;
+  }
+}
+
+.lt-ie8 #plan-selector-step2 li {
+  @media (min-width: 850px) {
+    width: 18%;
+  }
+}
+
+#plan-selector-step3 {
+  span {
+    @include co-txt-regular;
+    font-size: 16px;
+    color: $confident-grey;
+  }
+  .plan-list {
+    span {
+      float: right;
+    }
+  }
+  .ui-accordion-header-icon {
+    margin: 2px 10px;
+    width: 15px;
+    height: 15px;
+  }
+  .ui-icon-triangle-1-e {
+    background-image: url(../img/icons/plan-selector/icon-expand-o.png);
+  }
+  .ui-icon-triangle-1-s {
+    background-image: url(../img/icons/plan-selector/icon-collapse-o.png);
+  }
+}
+
+.plan-list {
+  @media (min-width: 850px) {
+    margin-top: 30px;
+  }
+  padding-left: 0;
+  list-style-type: none;
+  p {
+    cursor: pointer;
+    &.collapsable:hover {
+      cursor: pointer;
+    }
+  }
+  a {
+    &.h4 {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 850px) {
+  .plan-five-nineteen-link {
+    margin-left: 10%;
+    border: none;
+  }
+  .plan-over-twenty-link {
+    margin-left: 10%;
+  }
+}
+
+/* Health Continuum */
+.getting-better, 
+.happy-healthy, 
+.earlier-diagnosis, 
+.faster-treatment {
+  width: 200px;
+}
+
+.wheel-image {
+  margin: 0 auto 20px auto;
+  max-width: 437px;
+  width: 100%;
+}
+
+.hc-combined {
+  background: url(../img/health-continuum/hc-combined.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.hc-hcp {
+  background: url(../img/health-continuum/hc-hcp.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.hc-hti {
+  background: url(../img/health-continuum/hc-hti.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.hc-combined, 
+.hc-hcp, 
+.hc-hti {
+  @media (min-width: 437px) {
+    height: 437px;
+    background-size: auto;
+  }
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.hc-top {
+  position: absolute;
+  top: 0;
+}
+
+.hc-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.hc-wrapper {
+  padding-top: 10px;
+  width: 33%;
+  background-repeat: no-repeat;
+}
+
+.hc-content {
+  width: 80%;
+}
+
+.hc-line-top-left {
+  background-image: url(../img/health-continuum/line-top-left.png);
+  background-position: top right;
+}
+
+.hc-line-top-right {
+  background-image: url(../img/health-continuum/line-top-right.png);
+  background-position: top left;
+}
+
+.hc-line-bottom-right {
+  background-image: url(../img/health-continuum/line-bottom-right.png);
+  background-position: bottom left;
+}
+
+.hc-line-bottom-left {
+  background-image: url(../img/health-continuum/line-bottom-left.png);
+  background-position: bottom right;
+}

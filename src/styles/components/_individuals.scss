@@ -1,0 +1,73 @@
+/* Individuals */
+.individual-heading {
+  padding: 1em;
+}
+
+/* HTI landing page */
+.hti {
+  &.waiting-list {
+    @include co-txt-regular;
+    span {
+      @include co-txt-bold;
+      font-size: 1.3125em;
+    }
+  }
+}
+
+ul.hti {
+  &.cross {
+    list-style-type: square;
+  }
+}
+
+li.dont-cover {
+  background-image: url(/staticfiles/svg/cross.png) !important;
+  background-image: url(/staticfiles/svg/cross.svg) !important;
+  background-position: 0 4px !important;
+}
+
+.hti-twoways-height {
+  // @media screen and (max-width: 479px) and (min-width: 850px)
+  @media screen and (max-width: 479px) {
+    min-height: 17em;
+  }
+  @media screen and (max-width: 849px) {
+    min-height: 14em;
+  }
+  min-height: 17em;
+
+}
+
+/* LIGHTBOX MARKUP */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  text-decoration: none;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  .lightbox-container {
+    background-color: #fff;
+    width: 42em;
+    max-width: 90%;
+    min-height: 300px;
+    max-height: 100%;
+    margin: 2% auto 0;
+    padding: 1em 2em;
+    overflow-y: scroll;
+    span {
+      color: $healthy-orange;
+    }
+  }
+  &:target {
+    /* Remove default browser outline */
+    outline: none;
+    /* Unhide lightbox */
+    display: block;
+  }
+}
+/* END LIGHTBOX MARKUP */

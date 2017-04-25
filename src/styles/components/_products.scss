@@ -1,0 +1,233 @@
+/*********************************************/
+/* 3rings                                    */ 
+/* https://www.westfieldhealth.com/3rings/   */
+/*********************************************/
+.threerings {
+  &.you-set-the-rules {
+    .scenario-quote {
+      margin-bottom: 20px;
+      padding: 3px 15px;
+      blockquote {
+        font-style: italic;
+        font-weight: normal;
+      }
+    }
+  }
+  &.portal-app {
+    .device {
+      img {
+        float: left;
+        &.ipad {
+          margin-right: 20px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+    .badges {
+      width: 100%;
+      img {
+        margin: 0 auto 20px;
+      }
+    }
+  }
+  &.feedback {
+    .fb-item {
+      margin-top: 1em;
+      margin-bottom: 2em;
+      .avatar {
+        //blockquote arrow applied to div.avatar when quote is on the left as the absolute positioning did not work when applied to div.comment
+        .left-quote {
+          position: relative;
+          &:after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: -15px;
+            border-top: 10px solid transparent;
+            border-right: 10px solid transparent; 
+            border-bottom: 10px solid transparent; 
+            border-left: 10px solid $background-grey;
+          }
+        }
+      }
+      .comment {
+        .right-quote {
+          position: relative;
+          &:after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: -10px;
+            border-top: 10px solid transparent;
+            border-right: 10px solid $background-grey; 
+            border-bottom: 10px solid transparent; 
+            border-left: 10px solid transparent;
+          }
+          blockquote {
+            margin: 0 0 0 10px;
+          }
+        }
+        .left-quote {
+          blockquote {
+            margin: 0 10px 0 0;
+          }
+        }
+        blockquote {
+          background-color: $background-grey; 
+          border-radius: 10px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  &.get-your-plug {
+    .plug-options {
+      border-radius: 10px;
+      margin-bottom: 20px;
+      text-align: left;
+      &.rental1 {
+        // background-color: $open-blue;
+        background-color: $white;
+        border: 1px solid $responsible-grey;
+      }
+      &.rental2 {
+        // background-color: $grounded-purple;
+        background-color: $white;
+        border: 1px solid $responsible-grey;
+      }
+      &.plug-only {
+        background-color: $responsible-grey;
+      }
+      &.twelve-months {
+        background-color: $responsible-grey;
+      }
+      &.twentyfour-months {
+        background-color: $responsible-grey;
+      }
+      &.primary {
+        padding: 2rem;
+        p {
+          // color: $white;
+          color: $responsible-grey;
+          margin: 10px 0 0;
+          &.h0 {
+            font-size: 4rem;
+            span {
+              font-family: "Co Text Regular", "Trebuchet MS" , Arial, Helvetica, sans-serif;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 2.5rem;
+            }
+          }
+        }
+      }
+      &.secondary {
+        padding: 1rem 2rem 2rem;
+        p {
+          color: $white;
+          margin: 10px 0 0;
+          &.h0 {
+            font-size: 2.75rem;
+            span {
+              font-family: "Co Text Regular", "Trebuchet MS" , Arial, Helvetica, sans-serif;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+      &.trybub {
+        opacity: 0;
+        // background-color: $refreshing-green;
+        background-color: $open-blue;
+        padding: 2rem;
+        p {
+          color: $white;
+          &.h0 {
+            color: $white;
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            span {
+              font-family: "Co Text Regular", "Trebuchet MS" , Arial, Helvetica, sans-serif;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 2.75rem;
+            }
+          }
+        }
+        a {
+          color: $white;
+          &.phone {
+            text-decoration: none;
+          }
+        }
+      }
+      a {
+        margin: 1em 0 0 0;
+        &.button {
+          font-family: "Co Text Regular", "Trebuchet MS" , Arial, Helvetica, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1.5em;
+        }
+      }
+      .cta-arrow {
+        position: relative;
+      }
+      .button-3rings {
+        /* Healthy Orange button */
+        color: $white;
+        @include button;
+        @include button-primary-background;
+        /* Refreshing Green button */
+        // color: $white;
+        // background-color: $refreshing-green;
+        // background:  $refreshing-green; /* Old browsers */
+        // background: -moz-linear-gradient(top,  #bdd2a1 0%, #8db25b 100%); /* FF3.6-15 */
+        // background: -webkit-linear-gradient(top,  #bdd2a1 0%,#8db25b 100%); /* Chrome10-25,Safari5.1-6 */
+        // background: linear-gradient(to bottom,  #bdd2a1 0%,#8db25b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdd2a1', endColorstr='#8db25b',GradientType=0 ); /* IE6-9 */
+        /* Drop shadow */
+        // -webkit-box-shadow: 0px 0px 8px 2px rgba(93,104,110,0.25);
+        // -moz-box-shadow: 0px 0px 8px 2px rgba(93,104,110,0.25);
+        // box-shadow: 0px 0px 8px 2px rgba(93,104,110,0.25);
+        // transition: all 0.3s;
+        // border: 1px solid $responsible-grey;
+        text-align: left;
+        &::after {
+          background-image: url(/staticfiles/svg/more-arrow-white.png);
+          background-image: url(/staticfiles/svg/more-arrow-white.svg);
+          background-size: 29px 39px;
+          width: 29px;
+          height: 39px;
+          content: "";
+          position: absolute;
+          top: 40px;
+          right: 20px;
+        }
+        &:hover {
+          /* Healthy Orange button */
+          color: $white;
+          background: $healthy-orange;
+          /* Refreshing Green button */
+          // color: $white;
+          // background: $refreshing-green-dark-10;
+        }
+        &:active, 
+        &:focus, 
+        &:active:hover, 
+        &:active:focus {
+          /* Healthy Orange button */
+          color: $white;
+          background: $btn-primary-active;
+          /* Refreshing Green button */
+          // color: $white;
+          // background: $refreshing-green-dark-15;
+          transition: all 0s;
+        }
+      }
+    }
+  }
+}

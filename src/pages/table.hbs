@@ -1,5 +1,64 @@
 {{#extend "generic" title="Homepage"}}
 {{#content "content"}}
+	<div class="container_12">
+		<div class="header">
+			<a href="/" id="wh-logo">Westfield Health</a>
+			<div class="header-items mobile-only tablet-only">
+				<div class="mobile-menu-link">
+					<a href="javascript:void(0);" class="mobile-menu">Menu</a>
+				</div>
+				<div class="mobile-sign-in-link">
+					<a id="ctl00_hlLoginButton" href="/my-westfield">
+						Sign in <span>My Westfield</span>
+					</a>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="mobile-menu-dropdown">
+				<div class="header-items">
+					<div class="secondary-nav desktop-only">
+						<ul class="sfNavList">
+							<li><a href="/">Home</a></li>
+							<li><a href="/about-us/our-values-and-history">About us</a></li>
+							<li><a href="/blog">Our Blog</a></li>
+							<li><a href="/contact-us/contact-details">Contact us</a></li>
+							
+						</ul>
+					</div>
+					<div id="GlobalSearch_T64743725002">
+						<div class="global-search">
+							<input type="submit" name="ctl00$GlobalSearch$T64743725002$ctl00$ctl00$searchButton" value="Search" onclick="return false;" id="GlobalSearch_T64743725002_ctl00_ctl00_searchButton" class="sfsearchSubmit headerSearch" />
+							<input name="ctl00$GlobalSearch$T64743725002$ctl00$ctl00$searchTextBox" type="text" id="GlobalSearch_T64743725002_ctl00_ctl00_searchTextBox" class="sfsearchTxt headerSearch" placeholder="Search our website..." />
+							<label for="GlobalSearch_T64743725002_ctl00_ctl00_searchTextBox" class="hidden">Search</label>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="main-nav">
+					<ul>
+						<li><a href="/individual/">Individuals <span>Buy health cover</span></a></li>
+						<li><a href="/business/">Business <span>Employee health cover</span></a></li>
+						<li><a href="/intermediaries/">Intermediaries <span>Working with us</span></a></li>
+						<li><a href="/help-centre/">Help centre <span>Questions &amp; answers</span></a></li>
+						<li class="highlight desktop-only">
+							<a id="ctl00_hlLoginButton" href="/my-westfield">
+							Sign in <span>My Westfield</span>
+						</a>
+						</li>
+					</ul>
+				</div>
+				<div class="mobile-only tablet-only mobile-secondary-nav">
+					<ul>
+						<li><a href="/about-us/our-values-and-history">About us</a></li>
+						<li><a href="/blog">Our Blog</a></li>
+						<li><a href="/contact-us/contact-details">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+
 	{{!--<h4>Benefits Table</h4>--}}
 
 	<div class="banefits-table" style="overflow-x: auto;">
@@ -17,11 +76,11 @@
 					<th scope="row">Cover Benefits</th>
 					<th scope="col"><p class="small">Benefit period</p></th>
 					<th scope="col"><p class="small">Money back amount</p></th>
-					<th scope="col" data-title="Good4You Health Cash Plan Level 1, £6.20 per month" data-link="#1" class="column plan-level plan-data plan-level-1">Level 1 <br> <span>£6.20</span><br /> <button>select</button></th>
-					<th scope="col" data-title="Good4You Health Cash Plan Level 2, £12.95 per month" data-link="#2" class="column plan-level plan-data plan-level-2">Level 2 <br> <span>£12.95</span><br /> <button>select</button></th>
-					<th scope="col" data-title="Good4You Health Cash Plan Level 3, £19.20 per month" data-link="#3" class="column plan-level plan-data plan-level-3">Level 3 <br> <span>£19.20</span><br /> <button>select</button></th>
-					<th scope="col" data-title="Good4You Health Cash Plan Level 4, £26.85 per month" data-link="#4" class="column plan-level plan-data plan-level-4">Level 4 <br> <span>£26.85</span><br /> <button>select</button></th>
-					<th scope="col" data-title="Good4You Health Cash Plan Level 5, £39.30 per month" data-link="#5" class="column plan-level plan-data plan-level-5">Level 5 <br> <span>£39.30</span><br /> <button>select</button></th>
+					<th scope="col" data-title="Good4You Health Cash Plan Level 1, £6.20 per month" data-link="#1" class="column plan-level plan-data plan-level-1">Level 1 <br> <span>£6.20</span><br /> <button class="btn-primary">select</button></th>
+					<th scope="col" data-title="Good4You Health Cash Plan Level 2, £12.95 per month" data-link="#2" class="column plan-level plan-data plan-level-2">Level 2 <br> <span>£12.95</span><br /> <button class="btn-primary">select</button></th>
+					<th scope="col" data-title="Good4You Health Cash Plan Level 3, £19.20 per month" data-link="#3" class="column plan-level plan-data plan-level-3">Level 3 <br> <span>£19.20</span><br /> <button class="btn-primary">select</button></th>
+					<th scope="col" data-title="Good4You Health Cash Plan Level 4, £26.85 per month" data-link="#4" class="column plan-level plan-data plan-level-4">Level 4 <br> <span>£26.85</span><br /> <button class="btn-primary">select</button></th>
+					<th scope="col" data-title="Good4You Health Cash Plan Level 5, £39.30 per month" data-link="#5" class="column plan-level plan-data plan-level-5">Level 5 <br> <span>£39.30</span><br /> <button class="btn-primary">select</button></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -357,6 +416,94 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="footer">
+		<div class="footer-primary-wrapper">
+			<div class="footer-primary">
+				<div class="container_12 footer-content-wrapper">
+					<div class="grid_lg_3 grid_md_6 grid_12 stacked-margin">
+						<img src="/Sitefinity/WebsiteTemplates/Westfield/App_Themes/Westfield/img/westfield-footer-logo-288.png"
+							alt="Westfield Health logo" class="single-margin"
+							width="144" height="38" />
+						<p>
+							We&rsquo;re a not for profit health insurance company and have been keeping hard
+							working people fit and healthy since 1919.</p>
+					</div>
+					<div class="grid_lg_3 grid_md_6 grid_12 stacked-margin">
+						<p class="h5">Looking for health cover</p>
+						<div class="stacked-margin">
+							<ul>
+								<li><a href="/individual">For Individuals</a></li>
+								<li><a href="/business">For Businesses</a></li>
+								<li><a href="/intermediaries">For Intermediaries</a></li>
+							</ul>
+						</div>
+						<p class="h5">Existing customers</p>
+						<ul class="no-margin">
+							<li><a href="/my-westfield">Sign in to My Westfield</a></li>
+							<li><a href="/my-westfield/health-cash-plans/download-claim-form">Download a claim form</a></li>
+						</ul>
+					</div>
+					<div class="grid_lg_3 grid_md_6 grid_12 stacked-margin">
+						<p class="h5">About Westfield Health</p>
+						<ul>
+							<li><a href="/about-us/our-values-and-history">About us</a></li>
+							<li><a href="/press-media/press">Press &amp; Media</a></li>
+							<li><a href="/careers">Careers</a></li>
+							<li><a href="/blog">Our Blog</a></li>
+							<li><a href="/contact-us/contact-details">Contact us</a></li>
+							<li><a href="/about-us/legal/cookies-policy">Cookies</a></li>
+						</ul>
+					</div>
+					<div class="grid_lg_3 grid_md_6 grid_12">
+						<p class="h5">Westfield Health</p>
+						<p>
+							Westfield House<br />
+							60 Charter Row<br />
+							Sheffield<br />
+							S1 3FZ
+						</p>
+						<p>
+							<strong>0114 250 2000</strong><br />
+							(8am-6pm, Mon-Fri except Christmas Eve and public holidays)</p>
+						<p>
+							<strong><a href="mailto:enquiries@westfieldhealth.com">enquiries@westfieldhealth.com</a></strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+            
+
+		<div class="footer-secondary-wrapper">
+			<div class="footer-secondary">
+				<div class="container_12 footer-content-wrapper">
+					<div class="grid_12">
+						<div class="grid_12 grid_lg_9">
+							<ul class="footer-links-secondary">
+								<li><a href="/about-us/legal/terms-of-use">Terms of use</a></li>
+								<li><a href="/about-us/legal/privacy-policy">Privacy policy</a></li>
+								<li><a href="/about-us/legal/cookies-policy">Cookies policy</a></li>
+								<li><a href="/sitemap">Site map</a></li>
+							</ul>
+							<div class="clear">
+						</div>
+						<p class="small">
+							Westfield Contributory Health Scheme Ltd (company number 303523), Westfield Health & Wellbeing Ltd (company number 9871093) and Westfield Employment Services Ltd (company number 9870326) are collectively referred to as Westfield Health and are registered in England & Wales.  Additionally Westfield Contributory Health Scheme Ltd is authorised by the <a href="http://www.bankofengland.co.uk/PRA/Pages/default.aspx" title="Prudential Regulation Authority">Prudential Regulation Authority</a> (PRA) and regulated by the <a href="http://www.fca.org.uk/" title="Financial Conduct Authority">Financial Conduct Authority</a> (FCA) and the Prudential Regulation Authority. Our financial services registration number is 202609.
+						</p>
+						</div>
+						<div class="grid_12 grid_lg_3">
+							<a href="https://twitter.com/westfieldhealth" title="Twitter" target="_blank"><span class="circle-icon small-icon white twitter"></span></a>
+							<a href="https://www.facebook.com/westfieldhealth" title="Facebook" target="_blank"><span class="circle-icon small-icon white facebook"></span></a>
+							<a href="http://www.linkedin.com/company/westfield-health" title="LinkedIn" target="_blank"><span class="circle-icon small-icon white linkedin"></span></a>
+							<a href="http://www.youtube.com/westfieldhealth1" title="YouTube" target="_blank"><span class="circle-icon small-icon white youtube"></span></a>
+							<a href="https://ww2.feefo.com/reviews/westfield-health" target="_blank"><img class="feefo-logo" alt="Feefo logo" border="0" src="https://api.feefo.com/api/logo?merchantidentifier=westfield-health&template=Service-Stars-White-150x38.png" title="Our customer Feefo rating"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+
 
 {{/content}}
 {{/extend}}

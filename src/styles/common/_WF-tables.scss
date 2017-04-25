@@ -1,0 +1,540 @@
+/* Benefit Table */
+table {
+  margin-bottom: 20px;
+  width: 100%;
+  // font-size: 0.8125em;
+  color: $confident-grey;
+  text-align: center;
+  tr {
+    border: 1px solid $white;
+    &.benefit-levels-header {
+      th {
+        @include co-txt-bold;
+        font-size: 1.125rem;
+      }
+    }
+  }
+  th {
+    text-align: left;
+    color: $white;
+    background: #556670;
+    border: 1px solid $white;
+    padding: 6px 10px;
+    span {
+      @include co-txt-light;
+    }
+    .icon-key {
+      float: right;
+    }
+    .expand {
+      text-decoration: none;
+    }
+    .expand:before,
+    .collapse:before {
+      width: 18px;
+      height: 15px;
+      display: inline-block;
+      font-size: 16px;
+      @include co-txt-regular;
+      text-align: center;
+      text-decoration: none;
+      line-height: 0.8;
+      color: #888888;
+      background: $bkg-grey-01;
+      border: 1px solid #dddddd;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      padding-top: 3px;
+    }
+    .expand:before {
+      content: "+";
+    }
+    .collapse:before {
+      content: "-";
+    }
+  }
+  td {
+    padding: 6px 10px;
+    a {
+      text-decoration: none;
+    }
+  }
+  thead {
+    th {
+      padding: 10px;
+    }
+  }
+  .tick-primary {
+    width: 18px;
+    height: 15px;
+    display: inline-block;
+    text-align: center;
+    @include co-txt-regular;
+    text-indent: -9999px;
+    vertical-align: middle;
+    background-image: url(/staticfiles/svg/tick.png);
+    background-image: url(/staticfiles/svg/tick.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .tick {
+    width: 15px;
+    height: 11px;
+    display: inline-block;
+    text-align: center;
+    @include co-txt-regular;
+    text-indent: -9999px;
+    text-transform: capitalize;
+    vertical-align: middle;
+    background-image: url(/staticfiles/svg/tick-grey.png);
+    background-image: url(/staticfiles/svg/tick-grey.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .dash {
+    margin: 10px 0;
+    @include co-txt-regular;
+    color: $confident-grey;
+  }
+}
+
+.lt-ie8 th .expand, 
+.lt-ie8 th .collapse {
+  margin-top: 3px;
+  margin-right: 5px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-position: center center;
+  text-decoration: none !important;
+  float: left;
+}
+
+.lt-ie8 {
+  th {
+    .expand {
+      background-image: url(../img/icons/lt-ie8/icon-expand-circle.png);
+    }
+    .collapse {
+      background-image: url(../img/icons/lt-ie8/icon-collapse-circle.png);
+    }
+  }
+  table {
+    .tick-primary {
+      display: block;
+    }
+    .tick {
+      display: block;
+    }
+  }
+}
+
+.first-column {
+  text-align: left !important;
+  background: transparent;
+  color: $confident-grey;
+  border-top: none;
+}
+
+.column {
+  width: 11%;
+  text-align: center;
+}
+
+.double-column {
+  width: 22%;
+  text-align: center;
+}
+
+.spacer {
+  height: 10px;
+}
+
+.sub-header th {
+  @include co-txt-regular;
+  font-size: 1rem;
+  text-align: left;
+  color: $white;
+  background: $healthy-orange;
+}
+
+// .plan-level-1 {
+//   background-color: $open-blue;
+// }
+
+// .plan-level-1-odd {
+//   background-color: #f8fbfc;
+// }
+
+// .plan-level-1-even {
+//   background-color: #EFF7F7;
+// }
+
+// .plan-level-2 {
+//   background-color: $refreshing-green;
+// }
+
+// .plan-level-2-odd {
+//   background-color: #f9fbf7;
+// }
+
+// .plan-level-2-even {
+//   background-color: #f1f6ee;
+// }
+
+// .plan-level-3 {
+//   background-color: $grounded-purple;
+// }
+
+// .plan-level-3-odd {
+//   background-color: #f8f9fc;
+// }
+
+// .plan-level-3-even {
+//   background-color: #eceef5;
+// }
+
+// .plan-level-4 {
+//   background-color: $warm-orange;
+// }
+
+// .plan-level-4-odd {
+//   background-color: #fef9f2;
+// }
+
+// .plan-level-4-even {
+//   background-color: #ffefe0;
+// }
+
+// .plan-level-5 {
+//   background-color: $confident-grey;
+// }
+
+// .plan-level-5-odd {
+//   background-color: #f8fbfc;
+// }
+
+// .plan-level-5-even {
+//   background-color: #f2f3f4;
+// }
+
+// .table-row-odd, 
+// .lt-ie8 .table-row-odd .first-column {
+//   background-color: #f8fbfc;
+// }
+
+// .table-row-even, 
+// .lt-ie8 .table-row-even .first-column {
+//   background-color: #f2f3f4;
+// }
+
+// .product-table-wrapper {
+//   margin-bottom: 30px;
+// }
+
+// .most-popular {
+//   margin: 0 auto 10px auto;
+//   padding: 3px 10px 5px 10px;
+//   display: inline-block;
+//   position: relative;
+//   font-size: 14px;
+//   @include co-txt-regular;
+//   text-align: center;
+//   color: $white;
+//   -webkit-border-radius: 5px;
+//   -moz-border-radius: 5px;
+//   border-radius: 5px;
+// }
+
+// .most-popular-level-1 {
+//   background-color: $open-blue;
+// }
+
+// .most-popular-level-2 {
+//   background-color: $refreshing-green;
+// }
+
+// .most-popular-level-3 {
+//   background-color: $grounded-purple;
+// }
+
+// .most-popular-level-4 {
+//   background-color: $warm-orange;
+// }
+
+// .most-popular-level-5 {
+//   background-color: $confident-grey;
+// }
+
+// .most-popular-level-1:after, 
+// .most-popular-level-2:after, 
+// .most-popular-level-3:after, 
+// .most-popular-level-4:after, 
+// .most-popular-level-5:after {
+//   top: 100%;
+//   left: 50%;
+//   border: solid transparent;
+//   content: " ";
+//   height: 0;
+//   width: 0;
+//   position: absolute;
+//   border-width: 5px;
+//   margin-left: -5px;
+// }
+
+// .most-popular-level-1:after {
+//   border-top-color: $open-blue;
+// }
+
+// .most-popular-level-2:after {
+//   border-top-color: $refreshing-green;
+// }
+
+// .most-popular-level-3:after {
+//   border-top-color: $grounded-purple;
+// }
+
+// .most-popular-level-4:after {
+//   border-top-color: $warm-orange;
+// }
+
+// .most-popular-level-5:after {
+//   border-top-color: $confident-grey;
+// }
+
+.icon-ui {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: $responsible-grey;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.icon-key {
+  margin-right: 5px;
+  padding-top: 3px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  font-size: 10px;
+  @include co-txt-regular;
+  text-align: center;
+  vertical-align: middle;
+  color: $white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  cursor: default;
+}
+
+.icon-100 {
+  background-color: $healthy-orange;
+}
+
+.icon-75 {
+  background-color: $grounded-purple;
+}
+
+.icon-1yr {
+  background-color: $refreshing-green;
+}
+
+.icon-2yr {
+  background-color: $open-blue;
+}
+
+.wrapper-table-key {
+  padding: 10px;
+  margin-bottom: 20px;
+  min-height: 80px;
+  background-color: $bkg-grey-03;
+  overflow: hidden;
+}
+
+.table-key {
+  list-style-type: none;
+  display: inline;
+  li {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+.benefit-description {
+  display: none;
+}
+
+// /* Mobile friendly product table */
+// .plan-level-1, 
+// .plan-level-1-odd, 
+// .plan-level-1-even, 
+// .plan-level-2, 
+// .plan-level-2-odd, 
+// .plan-level-2-even, 
+// .plan-level-3, 
+// .plan-level-3-odd, 
+// .plan-level-3-even, 
+// .plan-level-4, 
+// .plan-level-4-odd, 
+// .plan-level-4-even, 
+// .plan-level-5, 
+// .plan-level-5-odd, 
+// .plan-level-5-even {
+//   @media (min-width: 850px) {
+//     display: table-cell;
+//     width: 11%;
+//   }
+//   width: 72px;
+//   display: none;
+// }
+
+// #selected-level-1, 
+// #selected-level-2, 
+// #selected-level-3, 
+// #selected-level-4, 
+// #selected-level-5 {
+//   display: none;
+// }
+
+#table-level-controls {
+  @media (min-width: 850px) {
+    display: none;
+  }
+  text-align: center;
+  padding-bottom: 10px;
+  .reduce-level, 
+  .increase-level, 
+  .reduce-level-disabled, 
+  .increase-level-disabled {
+    background: url(../img/left.png) no-repeat;
+    display: inline-block;
+    width: 23px;
+    height: 15px;
+    text-indent: -9999em;
+    text-decoration: none;
+  }
+  .increase-level{
+    background-image: url(../img/right.png);
+  }
+  .reduce-level-disabled {
+    cursor: not-allowed;
+    background-image: url(../img/left_disabled.png);
+  }
+  .increase-level-disabled {
+    cursor: not-allowed;
+    background-image: url(../img/right_disabled.png);
+  }
+  span {
+    color: $confident-grey;
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}
+
+.most-popular-highlight {
+  @media (min-width: 850px) {
+    display: table-row;
+  }
+  display: none;
+}
+
+/* Comparison Table */
+.wrapper-comparison-table {
+  @media (min-width: 850px) {
+    padding: 0 20px;
+  }
+  background-color: #f5f5f5;
+  .verbose {
+    @media (min-width: 600px) {
+      display: inline;
+    }
+    display: none;
+  }
+  .abbreviate {
+    @media (min-width: 600px) {
+      display: none;
+    }
+    display: inline;
+  }
+  .key {
+    @media (min-width: 600px) {
+      display: none;
+    }
+    p {
+      padding: 0 5px;
+    }
+  }
+}
+
+.comparison-table {
+  td, 
+  th {
+    @media (min-width: 600px) {
+      padding: 6px 10px;
+    }
+    padding: 4px 5px;
+  }
+  thead {
+    th {
+      @media (min-width: 600px) {
+        padding: 10px 5px;
+        font-size: 1.0625rem; 
+        line-height: 1.0625rem;
+      }
+    }
+    th, 
+    th span {
+      padding: 7px 2px;
+      @include co-txt-bold;
+      font-size: 1.0625rem;
+      color: $healthy-orange;
+      text-align: center;
+      background-color: transparent;
+      border: none;
+      line-height: 0.75rem; 
+      vertical-align: bottom;
+    }
+  }
+  tr,
+  tbody th,
+  tbody td {
+    @include co-txt-regular;
+    font-size: 1rem;
+    color: $confident-grey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #cad2d6;
+  }
+}
+
+.cross {
+  @include co-txt-regular;
+  color: $confident-grey;
+  float: none;
+  line-height: 1;
+}
+
+.compare-health-cover {
+  margin: 0;
+  background-color: $healthy-orange;
+  h3 {
+    margin: 0;
+    padding: 5px 10px;
+    @include co-txt-regular;
+    font-size: 16px;
+    color: $white;
+  }
+  span {
+    float: right;
+  }
+  .ui-accordion-header-icon {
+    margin: 7px 10px;
+    width: 15px;
+    height: 15px;
+  }
+}

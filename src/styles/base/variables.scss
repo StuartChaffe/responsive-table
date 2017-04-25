@@ -1,3 +1,43 @@
+/* Westfield Health */
+
+/* VARIABLES */
+
+/* Primary Colours */
+$healthy-orange: #e94e1b;
+$confident-grey: #5d686e;
+
+/* Secondary Colours */
+$open-blue: #89c7cf;
+$warm-orange: #f38b00;
+$refreshing-green: #a5c27e;
+$grounded-purple: #94a4c6;
+$background-grey: #e6ebee;
+$responsible-grey: #8d979e;
+
+/* Other Colours */
+$white: #ffffff;
+$black: #000000;
+$btn-primary-active: #d14314;
+
+$bkg-grey-01: #eeeeee; /* grey wrapper, table row, search results */
+$bkg-grey-02: #cfd8d7; /* tab, main nav highlight, bottom border */
+$bkg-grey-03: #f2f2f2; /* sub-nav (mobile), tab (mobile), table key */
+$bkg-grey-04: #e1e4e3; /* section heading (mobile), banner text gradient (mobile) */
+$bkg-grey-05: #f9f9f9; /* banner text gradient (mobile) */
+
+$confident-grey-10: #eeeff0; /* confident grey 10% */
+$confident-grey-20: #dfe1e2; /* confident grey 20% */
+$confident-grey-30: #ced1d3; /* confident grey 30% */
+$confident-grey-50: #aeb3b6; /* confident grey 50% */
+$confident-grey-70: #8d979e; /* confident grey 70% */
+$confident-grey-120: #485459; /* confident grey 120% */
+
+/* 3rings alternative colours */
+$refreshing-green-lite-10: lighten($refreshing-green, 10%);
+$refreshing-green-dark-10: darken($refreshing-green, 10%);
+$refreshing-green-dark-15: darken($refreshing-green, 15%);
+
+
 $wrapperWidth        : 960px;
 $wrapperBreakoutWidth: 120px;
 $mobilePadding       : 15px;

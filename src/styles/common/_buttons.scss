@@ -1,0 +1,221 @@
+/* Buttons */
+/* 'span' is used on 3rings page for 'More features' button */
+button, 
+input {
+  &.btn {
+    @include button;
+  }
+  &.btn-primary {
+    color: $white;
+    @include button-primary-background;
+    border: none;
+    &:hover {
+      color: $white;
+      background: $healthy-orange;
+    }
+    &:active, 
+    &:focus, 
+    &:active:hover, 
+    &:active:focus {
+      color: $white;
+      background: $btn-primary-active;
+      transition: all 0s;
+    }
+  }
+  &.btn-secondary {
+    color: $healthy-orange;
+    @include button-secondary-background;
+    border: none;
+    &:hover {
+      color: $healthy-orange;
+      background: $background-grey;
+    }
+    &:active, 
+    &:focus, 
+    &:active:hover, 
+    &:active:focus {
+      color: $healthy-orange;
+      background: $background-grey;
+      transition: all 0s;
+    }
+  }
+  &.btn-tertiary {
+    color: $white;
+    @include button-tertiary-background;
+    border: none;
+    &:hover {
+      color: $white;
+      background: $confident-grey;
+    }
+    &:active, 
+    &:focus, 
+    &:active:hover, 
+    &:active:focus {
+      color: $white;
+      background: $confident-grey-120;
+      transition: all 0s;
+    }
+  }
+  &.btn-cta {
+    color: $white;
+    @include button-primary-background;
+    padding: 20px 50px 20px 30px;
+    width: 100%;
+    text-align: left;
+    &::after {
+      background-image: url(/staticfiles/svg/more-arrow-white.png);
+      background-image: url(/staticfiles/svg/more-arrow-white.svg);
+      background-size: 29px 39px;
+      width: 29px;
+      height: 39px;
+      content: "";
+      position: absolute;
+      top: 12px;
+      right: 20px;
+    }
+  }
+}
+
+a {
+  &.button {
+    @include button;
+  }
+  &.button-cta {
+    @include button-primary-background;
+    padding: 20px 50px 20px 30px;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.button span {
+  font-size: 12px;
+}
+
+.button-primary {
+  color: $white;
+  @include button-primary-background;
+  transition: all 0.3s;
+  &:hover {
+    color: $white;
+    background: $healthy-orange;
+  }
+  &:active, 
+  &:focus, 
+  &:active:hover, 
+  &:active:focus {
+    color: $white;
+    background: $btn-primary-active;
+    transition: all 0s;
+  }
+}
+
+.button-secondary {
+  color: $healthy-orange;
+  @include button-secondary-background;
+  border: none;
+  &:hover {
+    color: $healthy-orange;
+    background: $background-grey;
+  }
+  &:active, 
+  &:focus, 
+  &:active:hover, 
+  &:active:focus {
+    color: $healthy-orange;
+    background: $background-grey;
+    transition: all 0s;
+  }
+}
+
+.button-tertiary {
+  color: $white;
+  @include button-tertiary-background;
+  transition: all 0.3s;
+  &:hover {
+    color: $white;
+    background: $confident-grey;
+  }
+  &:active, 
+  &:focus, 
+  &:active:hover, 
+  &:active:focus {
+    color: $white;
+    background: $confident-grey-120;
+    transition: all 0s;
+  }
+}
+
+.button-relative {
+  position: relative;
+}
+
+.button-cta {
+  &::after {
+    background-image: url(/staticfiles/svg/more-arrow-white.png);
+    background-image: url(/staticfiles/svg/more-arrow-white.svg);
+    background-size: 29px 39px;
+    width: 29px;
+    height: 39px;
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 20px;
+  }
+  &:hover {
+    background: $healthy-orange;
+  }
+  &:active {
+    background-color: $btn-primary-active;
+  }
+}
+
+.resource-toolkit-cta .button-cta::after {
+  top: 24px;
+}
+
+.button-wide {
+  margin: 0 auto;
+  text-align: center;
+  width:100%;
+  display:block;
+}
+
+.lt-ie8 .button-wide {
+  width: auto;
+}
+
+.button-medium {
+  padding: 5px 7px;
+  font-size: 0.75em;
+}
+
+.button-small {
+  background-color: $responsible-grey;
+  padding: 5px 7px;
+  font-size: 0.75em;
+}
+
+.comment-button {
+  width:auto;
+}
+
+.button-mobile-smalltext {
+  @media (min-width: 700px) {
+    font-size:1em;
+  }
+  font-size: 0.75em;
+}
+
+.topMargin10 {
+  margin-top: 10px;
+}
+
+.button-inline {
+  @include co-txt-regular;
+  font-size: 1em;
+}
+
+.min-width-200 {
+  min-width: 200px;
+}

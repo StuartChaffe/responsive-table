@@ -1,3 +1,65 @@
+/* Westfield Health */
+
+/* Fonts */
+@mixin co-txt-light {
+  font-family: "Co Text Light", "Trebuchet MS" , Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin co-txt-regular {
+  font-family: "Co Text Regular", "Trebuchet MS" , Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin co-txt-bold {
+  font-family: "Co Text Bold", "Trebuchet MS" , Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Buttons */
+@mixin button {
+  padding: 0.8em 2em;
+  margin-bottom: 10px;
+  display: inline-block;
+  @include co-txt-light;
+  font-size: 1.0625em;
+  text-align: center;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@mixin button-primary-background {
+  background-color: $warm-orange;
+  background: -moz-linear-gradient(top, $warm-orange 0%, $healthy-orange 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$warm-orange), color-stop(100%,$healthy-orange));
+  background: -webkit-linear-gradient(top, $warm-orange 0%,$healthy-orange 100%);
+  background: -o-linear-gradient(top, $warm-orange 0%,$healthy-orange 100%);
+  background: -ms-linear-gradient(top, $warm-orange 0%,$healthy-orange 100%);
+  background: linear-gradient(to bottom, $warm-orange 0%,$healthy-orange 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$warm-orange', endColorstr='$healthy-orange',GradientType=0 );  
+}
+
+@mixin button-secondary-background {
+  background-color: transparent;
+}
+
+@mixin button-tertiary-background {
+  background-color: $responsible-grey;
+  background: -moz-linear-gradient(top, $responsible-grey 0%, $confident-grey 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$responsible-grey), color-stop(100%,$confident-grey));
+  background: -webkit-linear-gradient(top, $responsible-grey 0%,$confident-grey 100%);
+  background: -o-linear-gradient(top, $responsible-grey 0%,$confident-grey 100%);
+  background: -ms-linear-gradient(top, $responsible-grey 0%,$confident-grey 100%);
+  background: linear-gradient(to bottom, $responsible-grey 0%,$confident-grey 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$responsible-grey', endColorstr='$confident-grey',GradientType=0 );  
+}
+
 @function spacer($key) {
 	@if map-has-key($spacer, $key) {
 		@return map-get($spacer, $key);

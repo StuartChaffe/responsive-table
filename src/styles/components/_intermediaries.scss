@@ -1,0 +1,47 @@
+/* Intermediaries */
+.stats-large {
+  @include co-txt-bold;
+  font-size: 2.65em;
+  line-height: 1;
+  letter-spacing: -3px;
+}
+
+.iceberg-diagram {
+  margin-top: 20px;
+  background-image: url(../img/iceberg/iceberg.png);
+  background-position: center center;
+  height: 383px;
+  position: relative;
+  p {
+    color: $white;
+  }
+}
+
+.iceberg-wrapper {
+  padding-top: 11px;
+  width: 35%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.iceberg-title p {
+  padding-top: 20px;
+  @include co-txt-bold;
+  font-size: 1.0625em;
+  text-align: center;
+}
+
+.iceberg-content {
+  width: 60%;
+  padding-bottom: 20px;
+}
+
+.iceberg-line-left {
+  background-image: url(../img/iceberg/line-top-left.png);
+  background-position: bottom right;
+}
+
+.iceberg-line-right {
+  background-image: url(../img/iceberg/line-top-right.png);
+  background-position: top left;
+}

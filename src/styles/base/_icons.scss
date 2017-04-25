@@ -1,0 +1,420 @@
+/* SVG icons */
+.circle-icon {
+  background: #495b5d;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 15px -15px 0;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.large-icon {
+    width: 125px;
+    height: 125px;
+    margin: 0;
+    opacity: 0.5 ; 
+  }
+  &.medium-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 9px 0 0;
+  }
+  &.small-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+  }
+  &.white {
+    background-color: $white;
+  }
+  &.light-grey {
+	background-color: #eeeff1;
+  }
+}   
+
+.icon {
+  @media (min-width: 850px) {
+    height: 56px;
+    padding-left: 66px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  display: table-cell;
+  vertical-align: middle;
+  background-image: none;
+  padding-left: 0;
+  background-repeat: no-repeat;
+  + p {
+    margin-top: 10px;
+  }
+}
+
+.icon-twitter-g, 
+.icon-facebook-g, 
+.icon-linkedin-g, 
+.icon-youtube-g {
+  width: 30px;
+  height: 30px;
+  display: block;
+  text-indent: -9999px;
+}
+
+.home-page-feature {
+  padding-top: 8px;
+}
+
+.icon-feature {
+  @media (max-width: 849px) {
+    min-height: 0;
+  }
+  width: 100%;
+  min-height: 75px;
+  h3 {
+    line-height: 1.1;
+    margin: 0;
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    color: $confident-grey;
+    a {
+      text-decoration: none;
+      color: $confident-grey;
+    } 
+  }
+  .circle-icon {
+    @media (max-width: 849px) {
+      display: none;
+    }
+  }
+}
+
+/* Social Media */
+.twitter {
+  &.white, &.light-grey {
+    background-image: url(../img/icons/twitter-grey.png);
+    background-image: url(/staticfiles/svg/icons/twitter-grey.svg);
+  }
+  &.grey {
+    background-image: url(../img/icons/twitter.png);
+    background-image: url(/staticfiles/svg/icons/twitter.svg);
+  }
+}
+
+.linkedin {
+  &.white, &.light-grey {
+    background-image: url(../img/icons/linkedin-grey.png);
+    background-image: url(/staticfiles/svg/icons/linkedin-grey.svg);
+  }
+  &.grey {
+    background-image: url(../img/icons/linkedin.png);
+    background-image: url(/staticfiles/svg/icons/linkedin.svg);
+  }
+}
+
+.facebook {
+  &.white, &.light-grey {
+    background-image: url(../img/icons/facebook-grey.png);
+    background-image: url(/staticfiles/svg/icons/facebook-grey.svg);
+  }
+  &.grey {
+    background-image: url(../img/icons/facebook.png);
+    background-image: url(/staticfiles/svg/icons/facebook.svg);
+  }
+}
+
+.youtube {
+  &.white, &.light-grey {
+    background-image: url(../img/icons/youtube-grey.png);
+    background-image: url(/staticfiles/svg/icons/youtube-grey.svg);
+  }
+  &.grey {
+    background-image: url(../img/icons/youtube.png);
+    background-image: url(/staticfiles/svg/icons/youtube.svg);
+  }
+}
+
+/* Contact */
+.icon-email {
+  background-image: url(../img/icons/email.png);
+  background-image: url(/staticfiles/svg/icons/email.svg);
+  background-size: 27px;
+}
+
+.icon-phone {
+  background-image: url(../img/icons/phone.png);
+  background-image: url(/staticfiles/svg/icons/phone.svg);
+}
+
+.icon-information {
+  background-image: url(../img/icons/find-out-more.png);
+  background-image: url(/staticfiles/svg/icons/find-out-more.svg);
+}
+
+/* Home page */
+.icon-individuals {
+  background-image: url(../img/icons/individuals.png);
+  background-image: url(/staticfiles/svg/icons/individuals.svg), linear-gradient(transparent, transparent);
+}
+
+.icon-businesses {
+  background-image: url(../img/icons/businesses.png);
+  background-image: url(/staticfiles/svg/icons/businesses.svg);
+}
+
+.icon-intermediaries {
+  background-image: url(../img/icons/intermediaries.png);
+  background-image: url(/staticfiles/svg/icons/intermediaries.svg);
+}
+
+/* About us | Our Values & History */
+.icon-who-we-are {
+  background-image: url(../img/icons/who-we-are.png);
+  background-image: url(/staticfiles/svg/icons/who-we-are.svg);
+}
+
+.icon-what-we-do {
+  background-image: url(../img/icons/what-we-do.png);
+  background-image: url(/staticfiles/svg/icons/what-we-do.svg);
+}
+
+.icon-stand-for {
+  background-image: url(../img/icons/what-we-stand-for.png);
+  background-image: url(/staticfiles/svg/icons/what-we-stand-for.svg);
+}
+
+@media (min-width: 850px) {
+  /* Individuals | How a health cash plan works */
+  .icon-money-back {
+    background-image: url(../img/icons/money-back.png);
+    background-image: url(/staticfiles/svg/icons/money-back.svg);
+  }
+
+  .icon-cash-payout {
+    background-image: url(../img/icons/cash-payout.png);
+    background-image: url(/staticfiles/svg/icons/cash-payout.svg);
+  }
+
+  .icon-health-wellbeing {
+    background-image: url(../img/icons/health-wellbeing-services.png);
+    background-image: url(/staticfiles/svg/icons/health-wellbeing-services.svg);
+    background-size: 42px;
+  }
+
+  .icon-doctorline {
+    background-image: url(../img/icons/doctorline.png);
+    background-image: url(/staticfiles/svg/icons/doctorline.svg);
+    background-size: 42px;
+  }
+
+  .icon-best-doctors {
+    background-image: url(../img/icons/best-doctors.png);
+    background-image: url(/staticfiles/svg/icons/best-doctors.svg);
+    background-size: 42px;
+  }
+
+  .icon-counselling {
+    background-image: url(../img/icons/24-hour-councelling.png);
+    background-image: url(/staticfiles/svg/icons/24-hour-councelling.svg);
+    background-size: 42px;
+  }
+
+  .icon-health-club {
+    background-image: url(../img/icons/health-club.png);
+    background-image: url(/staticfiles/svg/icons/health-club.svg);
+    background-size: 42px;
+  }
+
+  /* Business | Business Health Insurance */
+  .icon-hcp p {
+    @include co-txt-bold;
+    font-size: 19px;
+    color: $white;
+    text-align: center;
+    padding-top: 13px;
+  }
+
+  .icon-hti p {
+    @include co-txt-bold;
+    font-size: 19px;
+    color: $white;
+    text-align: center;
+    padding-top: 13px;
+  }
+
+  .icon-combined p {
+    @include co-txt-bold;
+    font-size: 15px;
+    color: $white;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 0.7;
+  }
+
+  /* Intermediaries | Overview */
+  .icon-admin-documents {
+    background-image: url(../img/icons/admin.png);
+    background-image: url(/staticfiles/svg/icons/admin.svg);
+    background-size: 42px;
+  }
+
+  .icon-marketing-materials {
+    background-image: url(../img/icons/marketing.png);
+    background-image: url(/staticfiles/svg/icons/marketing.svg);
+    background-size: 42px;
+  }
+
+  .icon-mosaic {
+    background-image: url(../img/icons/mosaic-2.png);
+    background-image: url(/staticfiles/svg/icons/mosaic-2.svg);
+    background-size: 38px;
+  }
+
+  /* Westfield Health logo */
+  /* https://www.westfieldhealth.com/hw-startups/ */
+  .icon-wh-logo {
+    background-image: url(../img/icons/who-we-are.png);
+    background-image: url(/staticfiles/svg/icons/who-we-are.svg);
+    background-size: 34px;
+  }
+}
+
+/* Business | Employee Health Cover */
+.well-being-wheel {
+  height: 35px;
+  padding-left: 45px;
+  color: $confident-grey;
+}
+
+.icon-heart {
+  background-image: url(../img/health-continuum/healthy-happy.png);
+  background-image: url(/staticfiles/svg/icons/healthy-happy.svg);
+}
+
+.icon-medical {
+  background-image: url(../img/health-continuum/faster-treatment.png);
+  background-image: url(/staticfiles/svg/icons/faster-treatment.svg);
+}
+
+.icon-stethoscope {
+  background-image: url(../img/health-continuum/early-diagnosis.png);
+  background-image: url(/staticfiles/svg/icons/early-diagnosis.svg);
+}
+
+.icon-time {
+  background-image: url(../img/health-continuum/getting-better.png);
+  background-image: url(/staticfiles/svg/icons/getting-better.svg);
+}
+
+/* Events */
+.events-icons {
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.icon-calendar {
+  background-image: url(../img/icons/calendar.png);
+  background-image: url(/staticfiles/svg/icons/calendar.svg);
+}
+
+.icon-pin {
+  background-image: url(../img/icons/location.png);
+  background-image: url(/staticfiles/svg/icons/location.svg);
+}
+
+/* Miscellaneous icons (not currently in use) */
+.icon-company-doctor {
+  background-image: url(../img/icons/company-doctor.png);
+  background-image: url(/staticfiles/svg/icons/company-doctor.svg);
+  background-size: 42px;
+}
+
+.icon-company-doctor-2 {
+  background-image: url(../img/icons/company-doctor-2.png);
+  background-image: url(/staticfiles/svg/icons/company-doctor-2.svg);
+  background-size: 42px; 
+}
+
+.icon-personal-accident {
+  background-image: url(../img/icons/personal-accident.png);
+  background-image: url(/staticfiles/svg/icons/personal-accident.svg);
+  background-size: 42px; 
+}
+
+.icon-personal-health-risk {
+  background-image: url(../img/icons/personal-health-risk-assessment.png);
+  background-image: url(/staticfiles/svg/icons/personal-health-risk-assessment.svg);
+  background-size: 42px; 
+}
+
+.icon-westfield-rewards {
+  background-image: url(../img/icons/westfield-rewards.png);
+  background-image: url(/staticfiles/svg/icons/westfield-rewards.svg);
+  background-size: 42px; 
+}
+
+/* Company Doctor icons */
+.icon-counselling-1 {
+  background-image: url(../img/icons/24-hour-councelling-1.png);
+  background-image: url(/staticfiles/svg/icons/24-hour-councelling-1.svg);
+  background-size: 42px; 
+}
+
+.icon-counselling-2 {
+  background-image: url(../img/icons/24-hour-councelling-2.png);
+  background-image: url(/staticfiles/svg/icons/24-hour-councelling-2.svg);
+  background-size: 42px; 
+}
+
+.icon-absence-reporting {
+  background-image: url(../img/icons/absence-reporting.png);
+  background-image: url(/staticfiles/svg/icons/absence-reporting.svg);
+  background-size: 42px; 
+}
+
+.icon-big-white-wall {
+  background-image: url(../img/icons/big-white-wall.png);
+  background-image: url(/staticfiles/svg/icons/big-white-wall.svg);
+  background-size: 42px; 
+}
+
+.icon-physioline {
+  background-image: url(../img/icons/physioline.png);
+  background-image: url(/staticfiles/svg/icons/physioline.svg);
+  background-size: 42px; 
+}
+
+/* Third Party Benefits icons */
+.icon-twenty4-hour-councelling-dark {
+  background-image: url(../img/icons/24-hour-councelling-dark.png);
+  background-image: url(/staticfiles/svg/icons/24-hour-councelling-dark.svg);
+}
+.icon-best-doctors-dark {
+  background-image: url(../img/icons/best-doctors-dark.png);
+  background-image: url(/staticfiles/svg/icons/best-doctors-dark.svg);
+}
+.icon-doctorline-dark {
+  background-image: url(../img/icons/doctorline-dark.png);
+  background-image: url(/staticfiles/svg/icons/doctorline-dark.svg);
+}
+.icon-health-club-dark {
+  background-image: url(../img/icons/health-club-dark.png);
+  background-image: url(/staticfiles/svg/icons/health-club-dark.svg);
+}
+.icon-personal-accident-dark {
+  background-image: url(../img/icons/personal-accident-dark.png);
+  background-image: url(/staticfiles/svg/icons/personal-accident-dark.svg);
+}
+.icon-personal-health-risk-assessment-dark {
+  background-image: url(../img/icons/personal-health-risk-assessment-dark.png);
+  background-image: url(/staticfiles/svg/icons/personal-health-risk-assessment-dark.svg);
+}
+.icon-scanning-dark {
+  background-image: url(../img/icons/scanning-dark.png);
+  background-image: url(/staticfiles/svg/icons/scanning-dark.svg);
+}
+.icon-westfield-rewards-dark {
+  background-image: url(../img/icons/westfield-rewards-dark.png);
+  background-image: url(/staticfiles/svg/icons/westfield-rewards-dark.svg);
+}

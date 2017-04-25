@@ -4,13 +4,10 @@ $open-blue: #89c7cf;
 $refreshing-green: #a5c27e;
 $confident-grey: #485459;
 
-body {
-	font-size: 13px;
-	color: #5d686e;
-}
 th, td {
 	text-align: left;
 	vertical-align: top;
+	font-size: 0.8em;
 }
 
 .benefits-table {
@@ -32,6 +29,13 @@ th, td {
 		background: $confident-grey;
 		color: white;
 		padding: 10px 5px;
+		font-size: 1em;
+
+		button {
+			margin-bottom: 0px;
+			font-weight: 600;
+			border-radius: 5px;
+		}
 	}
 	td:first-child, tr th:first-child {
 		text-align: left;
@@ -151,7 +155,10 @@ th, td {
 	.sub-header th {
 		border-bottom: 1px solid grey;
 		background: white;
+		color: $confident-grey;
+		text-align: center;
 		padding-top: 15px;
+		font-size: 15px;
 	}
 	.children-header th {
 		border-bottom: 0;

@@ -1,0 +1,195 @@
+/* Resource toolkit */
+.research-section .dotted-vertical-primary {
+  padding-right:15px;
+}
+
+.other-steps-section {
+  h3 {
+    min-height: 75px;
+    a {
+      text-decoration:none;
+      &.step1header {
+        color:#8fa2ca;
+      }
+      &.step3header {
+        color:#93c2d4;
+      }
+      &.step4header {
+        color:#e99204;
+      }
+      &.step5header {
+        color:#a2c575;
+      }
+    }
+    &.h6 {
+      @media (min-width: 850px) {
+        min-height: 40px;
+      }
+    }
+  }
+}
+
+.other-research-document {
+  margin-top:15px;
+}
+
+.case-study-section {
+  blockquote {
+    color: $healthy-orange;
+    @include co-txt-regular;
+    border-top: 1px solid #adb3b6;
+    border-bottom: 1px solid #adb3b6;
+    padding:15px 0;
+  }
+  cite {
+    font-size:smaller;
+    @include co-txt-bold;
+    color: $confident-grey;
+    font-style:normal;
+  }
+}
+
+.wellbeing-wheel {
+  margin-left: 1.01626%;
+  margin-right: 1.01626%;
+}
+
+@media (min-width: 850px) {
+  .wellbeing-wheel {
+    background: url(../img/wellbeing-wheel.png) center 30px no-repeat;
+    margin:20px auto;
+    width:683px;
+    height:550px;
+    position:relative;
+  }
+
+  .wellbeing-wheel-step {
+    position:absolute;
+    h4 {
+      margin-bottom: 0.4em;
+      a {
+        text-decoration:none;
+      }
+    }
+    p {
+      font-size: 0.8125em;
+      a {
+        text-decoration:none;
+        font-size: 0.8125rem;
+        @include co-txt-regular;
+      }
+    }
+  }
+
+  .wellbeing-wheel-step1 {
+    width:200px;
+    top:12px;
+    background: url(../img/step1-pointer.png) 0 0 no-repeat;
+    padding:20px 30px 0 15px;
+  }
+
+  .wellbeing-wheel-step2 {
+    width:204px;
+    top:12px;
+    right:4px;
+    background: url(../img/step2-pointer.png) 0 0 no-repeat;
+    padding:20px 0 0 45px;
+  }
+
+  .wellbeing-wheel-step3 {
+    width:204px;
+    top:266px;
+    right:0;
+    background: url(../img/step3-pointer.png) 0 bottom no-repeat;
+    padding:0 0 10px 45px;
+  }
+
+  .wellbeing-wheel-step4 {
+    width:320px;
+    bottom:0;
+    left:195px;
+    background: url(../img/step4-pointer.png) center top no-repeat;
+    padding-top:35px;
+  }
+
+  .wellbeing-wheel-step5 {
+    width:204px;
+    top:246px;
+    background: url(../img/step5-pointer.png) 0 bottom no-repeat;
+    padding:20px 30px 0 15px;
+  }
+}
+
+/* Absence Calculator */
+.explanatory-text {
+  margin-top:5px;
+  background-color:$confident-grey;
+  color:$white;
+  padding:10px 15px;
+  border-radius:5px;
+  p {
+    color:$white;
+    line-height:1.4em;
+    &:last-child {
+      margin-bottom:0;
+    }
+  }
+}
+
+.explanatory-link {
+  display: block;
+  margin-top: 0.5em;
+}
+
+.use-average {
+  margin: 0.5em 0;
+  display: block;
+}
+
+.calculator-field {
+  padding-bottom:2em;
+  select, 
+  input {
+    margin-bottom: 0.5em;
+  }
+  label {
+    @include co-txt-regular;
+  }
+  .error {
+    margin: -1.5em 0 2em 0;
+  }
+}
+
+.calculator-results-section {
+  padding:25px;
+  h2, h3, p {
+    color:$white;
+  }
+}
+
+.calculator-result {
+  margin-bottom:1.5em;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.calculator-result-holder {
+  display:block;
+  height:1em;
+  color:$white;
+}
+
+#total-savings {
+  font-size: 36px;
+}
+
+.calculator-link {
+  background-color:$refreshing-green; 
+  padding:20px; 
+  margin-bottom:10px;
+  img {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+}

@@ -1,0 +1,112 @@
+/* Forms */
+fieldset {
+  border: none;
+  &.denormalised {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+input, textarea, select {
+  margin: 4px 0 10px 0;
+  padding: 8px 0 8px 10px;
+  width: 100%;
+  display: block;
+  @include co-txt-light;
+  font-size: 1em;
+  color: $confident-grey;
+  background-color: #eef0ef;
+  border: 1px solid $bkg-grey-02; 
+}
+
+input.headerSearch {
+  font-size: 0.8125em;
+  padding: 8px 0 7px 10px;
+  transition: all 0.3s;
+}
+
+.white input {
+  background-color: $white;
+}
+
+#pnlLoginForm {
+  max-width: 400px;
+  margin: 0 auto;
+  input {
+    margin-top: 0;
+  }
+  a.button-primary {
+    margin: 10px auto 20px;
+    width: 100%;
+  }
+}
+
+.form-item {
+  margin-bottom: 10px;
+  input, 
+  textarea, 
+  select {
+    margin-bottom: 0;
+  }
+}
+
+.form-control:focus {
+  border-color: $warm-orange;
+  outline: none; 
+}
+
+input.has-error {
+  border: 1px solid red;
+}
+
+input[type="checkbox"] {
+  margin-top: 5px;
+  width: 20px;
+  border: 1px solid $responsible-grey;
+}
+
+.form-inline .checkbox input[type="checkbox"] {
+  margin: 5px;
+}
+
+label {
+  font-size: 1em;
+  @include co-txt-light;
+  color: $confident-grey;
+}
+
+.text-muted {
+  color: $confident-grey;
+}
+
+.radio, .checkbox {
+  label {
+    input {
+      width: inherit;
+      float: left;
+    }
+  }
+}
+
+.radio-list {
+	width: auto;
+
+	input {
+		width: auto;
+		float:left;
+		margin-right: 5px;
+	}
+
+	label {
+		float:left;
+		padding-top: 2px;
+	}
+}
+
+.radio-list-inline {
+	margin-bottom: 0;
+
+	label {
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,151 @@
+/* Third party benefits - list */
+
+.benefits {
+	margin-top:30px;
+	.benefit {
+		margin-bottom:30px;
+		a {
+			background-color: #EEF0EF;
+			display: block;
+			font-size: 20px;
+			@include co-txt-bold;
+			line-height: 20px;
+			text-decoration: none;
+			padding: 20px;
+			margin-bottom: 15px;
+			.title-wrapper {
+				display: flex;
+				height: 40px;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+			}
+			.icon {
+				display: block;
+				max-height: 80px;
+				background-position: center center;
+				margin: 0 auto;
+				width: 80px;
+				height: 80px;
+				background-size: cover;
+			}
+		}
+	}
+}
+
+
+/* Third party benefits - detail */
+
+#benefit-detail {
+	.title-holder {
+		background-color: #EEF0EF;
+		height: 80px;
+		overflow: hidden;
+		margin-bottom: 35px;
+		@media (min-width: 850px) {
+			height: 120px;
+		}
+		h1 {
+			font-size: 20px;
+			display: inline-block;
+			margin: 0;
+			vertical-align: middle;
+			max-width: 65%;
+			@media (min-width: 850px) {
+				max-width: none;
+				font-size: 30px;
+			}
+			@media (max-width: 480px) {
+				font-size: 18px;
+			}
+		}
+		.icon {
+			display: inline-block;
+			background-color: #fff;
+			border: solid 30px #fff;
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			margin: -15px -20px -15px 5px;
+			background-size: cover;
+			@media (min-width: 850px) {
+				width: 160px;
+				height: 160px;
+			}
+		}
+	}
+	.tick {
+		margin-left: 12px;
+	}
+	.testimonial {
+		.alpha img {
+			float: right;
+		}
+		blockquote {
+			max-width: 400px;
+		}
+	}
+	.extra-info {
+		border-top: solid 1px #D9D9D9;
+		padding-top: 20px;
+		margin-bottom: 20px;
+	}
+	.other-benefits {
+		border-top: solid 1px #D9D9D9;
+		padding-top: 20px;
+		p {
+			margin: 0;
+		}
+		a {
+			display: inline-block;
+			font-size: 15px;
+			padding-left: 60px;
+			height: 55px;
+			line-height: 55px;
+			background-repeat: no-repeat;
+			margin: 0;
+			text-decoration: none;
+		}
+	}
+}
+
+/* Third part benefit icons */
+.benefits .benefit, #benefit-detail {
+	.westfield-rewards {
+		background-image: url(../img/icons/westfield-rewards-dark.png);
+		background-image: url(/staticfiles/svg/icons/westfield-rewards-dark.svg);
+	}
+	.doctorline {
+		background-image: url(../img/icons/doctorline-dark.png);
+		background-image: url(/staticfiles/svg/icons/doctorline-dark.svg);
+	}
+	.best-doctors {
+		background-image: url(../img/icons/best-doctors-dark.png);
+		background-image: url(/staticfiles/svg/icons/best-doctors-dark.svg);
+	}
+	.advice-line {
+		background-image: url(../img/icons/24-hour-councelling-dark.png);
+		background-image: url(/staticfiles/svg/icons/24-hour-councelling-dark.svg);
+	}
+	.scanning-facilities {
+		background-image: url(../img/icons/scanning-dark.png);
+		background-image: url(/staticfiles/svg/icons/scanning-dark.svg);
+	}
+	.health-club {
+		background-image: url(../img/icons/health-club-dark.png);
+		background-image: url(/staticfiles/svg/icons/health-club-dark.svg);
+	}
+	.personnal-accident {
+		background-image: url(../img/icons/personal-accident-dark.png);
+		background-image: url(/staticfiles/svg/icons/personal-accident-dark.svg);
+	}
+	.risk-assessment {
+		background-image: url(../img/icons/personal-health-risk-assessment-dark.png);
+		background-image: url(/staticfiles/svg/icons/personal-health-risk-assessment-dark.svg);
+	}
+	// Used on the Healthy Extras pages https://www.westfieldhealth.com/your-healthy-extras 
+	.big-white-wall {
+		background-image: url(../img/icons/big-white-wall-dark.png);
+		background-image: url(/staticfiles/svg/icons/big-white-wall-dark.svg);
+	}
+}

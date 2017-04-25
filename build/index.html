@@ -3,7 +3,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Jazcss | Homepage</title>
+	<title>Westfield | Homepage</title>
 	<link rel="shortcut icon" type="image/png" href="/favicon.png">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,47 +19,522 @@
 	<![endif]-->
 </head>
 <body>
-	<div class="remodal-bg">
-		<main role="main" class="wrapped">
-					<div class="padding-h-xl padding-v-md">
-					<h1>Jazcss</h1>
-		<p>
-			Jazcss is my frontend framework that I use whenever I start a new project. It contains all the usual things you'd expect from any framework, plus a few extras. It's built to be responsive, customisable and semantically correct as much as possible. This site is using the latest version of Jazcss and shows off all the things it can do.</p><p>It's worth noting that you really shouldn't consider using this framework unless you can be sure gzip will be enabled on the server. This is because Jazcss offers a shit ton of optional spacing classes to make fine-tuning layouts easier. They're implemented using iterative SCSS <code>@each</code> blocks. This pushes the size of the framework way up to around 200KB, but because it's all very similar code, gzip compression brings it down by about 95% making it really lightweight afterwards.
-		</p>
-		<p>
-			The heavy stuff is split into its own CSS file, <a target="_blank" href="/core.min.css">core.min.css</a>. Huge, right? Bung it in an online GZIP compressor like <a href="http://refresh-sf.com/" target="_blank">this one</a>, hit the CSS button and see the magic.
-		</p>
-		<h2>Tech</h2>
-		<ul>
-			<li><a href="http://gulpjs.com/"><strong>Gulp</strong></a> - JS task runner. This is the master file of Jazcss and is what brings everything together to serve up a built site</li>
-			<li><a href="http://handlebarsjs.com/"><strong>Handlebars</strong></a> - HTML templating engine. Makes it easy to reuse components on multiple pages or create page layouts</li>
-			<li><a href="https://browsersync.io/"><strong>Browsersync</strong></a> - Live browser reloading, CSS injection, static site serving, session synchronisation</li>
-			<li><a href="http://sass-lang.com/"><strong>Sass</strong></a> - CSS precompiler providing advanced CSS functionality. Jazcss uses SCSS instead of Sass itself</li>
-		</ul>
-		<h2>Directory structure</h2>
-		<ul>
-			<li><code>src/pages</code> - The main view files which get rendered into <code>html</code> files with the same name when built</li>
-			<li><code>src/layouts</code> - Wrappers for pages. Contains placeholders which page files are rendered inside of</li>
-			<li><code>src/partials</code> - Individual component markup files. These can be used on pages and layouts using <code>&#123;&#123;&gt;header&#125;&#125;</code></li>
-			<li><code>src/styles</code> - Sass styles, described below</li>
-			<li><code>src/scripts</code> - JS scripts. Files in these directories are automatically concatenated and minified via gulp</li>
-			<li><code>src/images</code>, <code>src/videos</code>, <code>src/fonts</code> - These directories are directly copied into the build folder</li>
-			<li><code>.editorconfig</code> - See <a target="_blank" href="https://editorconfig.org/">EditorConfig.org</a>. Standardises formatting for project so tabs don't fight with spaces</li>
-		</ul>
-		<h2>Style structure</h2>
-		<ul>
-			<li><code>Base</code> - Contains core framework files and shouldn't need much changing other than <code>variables.scss</code></li>
-			<li><code>Helpers</code> - Classes that provide useful functionality. Shouldn't need changing</li>
-			<li><code>Layout</code> - Classes specifically focussed on element positioning. Shouldn't need changing</li>
-			<li><code>Common</code> - Style rules that target standard HTML elements such as <code>&lt;a&gt;</code>, <code>&lt;h1&gt;</code> etc</li>
-			<li><code>Components</code> - The bread and butter of your project. Every partial should have a corresponding file here</li>
-			<li><code>Vendor</code> - Shove all your dirty third-party CSS in here</li>
-		</ul>
+	
+					<a href="/table">table</a>
 
-		</div>
+	<div class="container_12">
+            <div class="header">
+                <a href="/" id="wh-logo">Westfield Health</a>
+                <div class="header-items mobile-only tablet-only">
+                    <div class="mobile-menu-link">
+                        <a href="javascript:void(0);" class="mobile-menu">Menu</a>
+                    </div>
+                    <div class="mobile-sign-in-link">
+                        <a id="ctl00_hlLoginButton" href="/my-westfield">
+    Sign in <span>My Westfield</span>
+</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="mobile-menu-dropdown">
+                    <div class="header-items">
+                        <div class="secondary-nav desktop-only">
+                            <ul class="sfNavList">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/about-us/our-values-and-history">About us</a></li>
+                                <li><a href="/blog">Our Blog</a></li>
+                                <li><a href="/contact-us/contact-details">Contact us</a></li>
+                                
+                            </ul>
+                        </div>
+                        
+<div id="GlobalSearch_T64743725002">
+	
 
-		</main>
+<div class="global-search">
+    <input type="submit" name="ctl00$GlobalSearch$T64743725002$ctl00$ctl00$searchButton" value="Search" onclick="return false;" id="GlobalSearch_T64743725002_ctl00_ctl00_searchButton" class="sfsearchSubmit headerSearch" />
+    <input name="ctl00$GlobalSearch$T64743725002$ctl00$ctl00$searchTextBox" type="text" id="GlobalSearch_T64743725002_ctl00_ctl00_searchTextBox" class="sfsearchTxt headerSearch" placeholder="Search our website..." />
+    <label for="GlobalSearch_T64743725002_ctl00_ctl00_searchTextBox" class="hidden">Search</label>
+</div>
+</div>
+
+
+                    </div>
+                    <div class="clear"></div>
+                    <div class="main-nav">
+                        <ul>
+                            
+
+<li><a href="/individual/">Individuals <span>Buy health cover</span></a></li>
+<li><a href="/business/">Business <span>Employee health cover</span></a></li>
+<li><a href="/intermediaries/">Intermediaries <span>Working with us</span></a></li>
+<li><a href="/help-centre/">Help centre <span>Questions &amp; answers</span></a></li>
+<li class="highlight desktop-only">
+    <a id="ctl00_hlLoginButton" href="/my-westfield">
+    Sign in <span>My Westfield</span>
+</a>
+</li>
+                        </ul>
+                    </div>
+                    <div class="mobile-only tablet-only mobile-secondary-nav">
+                        <ul>
+                            <li><a href="/about-us/our-values-and-history">About us</a></li>
+                            <li><a href="/blog">Our Blog</a></li>
+                            <li><a href="/contact-us/contact-details">Contact us</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="container_12">
+            <div class="section-heading mobile-only tablet-only">
+                
+<span id="MobileNavigationHeader_C039"><span id="MobileNavigationHeader_C039_ctl00_ctl00_MessageLabel">Individuals</span></span>
+            </div>
+            
+
+
+
+
+<div class="sfNavWrp sfNavHorizontalWrp main-sub-nav ASP.sfctrlpresentation_openaccessdataprovider_c59ccf75d0836565b87fff0000a6ab22_ascx">
+    
+    
+      
+    
+     
+    <ul class="sfNavHorizontal sfNavList">
+        
+                        <li>
+                            <a href="hcp/how-it-works" class="sfSel">
+                              How a health cash plan works
+                              <span class="mobile-menu-title">How it works</span>
+                            </a>
+                        </li>                                               
+                    
+                        <li>
+                            <a href="hcp/good4you-health-cash-plan">
+                              The Good4you Health Cash Plan
+                              <span class="mobile-menu-title">Buy Good4You</span>
+                            </a>
+                        </li>
+                    
+    </ul>
+</div>
+
+            <div class="banner-wrapper">
+                
+<div>
+	<!-- 2016.1.225.40 -->
+        <div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="10000" data-cycle-speed="500" data-cycle-slides="> div" data-cycle-pager="#pager" data-cycle-swipe="true">
+            
+        <div id="ctl00_CycleSlideshow_ctl00_ctl00_ctl00_dynamicContentListView_ctrl0_dvSlide" class="cycle-slide" data-cycle-pager-template="&lt;a href=&quot;/individual/good4you-health-cash-plan&quot;>How a Health Cash Plan works&lt;/a>">
+            <img id="ctl00_CycleSlideshow_ctl00_ctl00_ctl00_dynamicContentListView_ctrl0_imImage" src="https://www.westfieldhealth.com/images/banners/individual/banner-image2.jpg?sfvrsn=8" alt="How much do you think you spend on your everyday healthcare?" />
+            <div class="cycle-slide-inner">
+                <p id="ctl00_CycleSlideshow_ctl00_ctl00_ctl00_dynamicContentListView_ctrl0_pHeading" class="h0 size_1 header_color_1">How much do you think you spend on your everyday healthcare?</p>
+                <div class="desktop-banner-text">
+                    <p id="ctl00_CycleSlideshow_ctl00_ctl00_ctl00_dynamicContentListView_ctrl0_pSubHeader" class="sub-header size_1 sub_header_color_2">We can help you claim your money back.</p>
+                    <p><a id="ctl00_CycleSlideshow_ctl00_ctl00_ctl00_dynamicContentListView_ctrl0_hlLink" class="button button-primary" href="/individual/good4you-health-cash-plan">View the full list of plan benefits</a></p>
+                </div>
+            </div>
+            <div id="ctl00_CycleSlideshow_ctl00_ctl00_ctl00_dynamicContentListView_ctrl0_pnlMobileBannerText" class="mobile-banner-text">
+		
+                <p>
+                    We can help you claim your money back.<br/>
+                    <a id="ctl00_CycleSlideshow_ctl00_ctl00_ctl00_dynamicContentListView_ctrl0_hlLinkMobile" href="/individual/good4you-health-cash-plan">View the full list of plan benefits</a>
+                </p>
+            
 	</div>
+        </div>
+    
+            
+            <span class="cycle-shadow"></span>
+        </div>
+    <input id="ctl00_CycleSlideshow_ctl00_ctl00_ctl00_dynamicContentListView_ClientState" name="ctl00_CycleSlideshow_ctl00_ctl00_ctl00_dynamicContentListView_ClientState" type="hidden" /><span id="ctl00_CycleSlideshow_ctl00_ctl00_ctl00_dynamicContentListView" style="display:none;"></span>
+
+</div>
+                <div class="nested-banner-feature">
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-grey">
+            
+<div class="sf_cols wrapper-white">
+    <div class="sf_colsOut sf_1col_1_100 container_12">
+        <div id="MainContent_TCD4298A3001_Col00" class="sf_colsIn sf_1col_1in_100"><span id="MainContent_C040">
+
+<div class="content-block">
+    <div class="grid_12">
+        <h1 class="">What is a health cash plan?</h1>
+    </div>
+    <div class="clear"></div>
+</div></span><div class="sf_cols double-margin">
+    <div class="sf_colsOut sf_1col_1_100 grid_lg_8 grid_12 nested-content" style="width: 65%;">
+        <div id="MainContent_TCD4298A3008_Col00" class="sf_colsIn sf_2cols_1in_67"><div class='sfContentBlock'>
+
+<div class="grid_12 content-block">
+    <p>A health cash plan allows you to claim money back, up to set limits, towards the cost of your essential healthcare. It&rsquo;s a great way to help you budget for your everyday health costs. From dental appointments to optical check ups, therapy treatment and more, you can rest assured that your cover will help with your bills. Your dependent children are covered too, on key benefits, giving you that extra peace of mind.</p>
+<p>A health cash plan also provides access to valuable health and wellbeing services, for those unexpected health issues and to help keep you at your fit and healthy best.</p>
+<p>We are very proud to be an award winning provider and it&rsquo;s reassuring to know that for a small monthly amount you can purchase our harder working health cover to help look after the health of you and your family.</p>
+</div>
+
+
+</div>
+            
+        </div>
+    </div>
+    <div class="sf_colsOut sf_1col_1_100 grid_lg_4 grid_12" style="width: 35%;">
+        <div id="MainContent_TCD4298A3008_Col01" class="sf_colsIn sf_2cols_2in_33"><div class="sfimageWrp">
+	        
+<img id="MainContent_C019_ctl00_ctl00_imageItem" title="What is a health cash plan" src="/images/individuals/what-is-a-health-cash-plan.jpg?sfvrsn=4" alt="What is a health cash plan" />
+
+
+</div>
+            
+        </div>
+    </div>
+</div><span id="MainContent_C041">
+
+<div class="content-block">
+    <div class="grid_12">
+        <h2 class="">How our Good4you Health Cash Plan works</h2>
+    </div>
+    <div class="clear"></div>
+</div></span><div class="sf_cols double-margin">
+	<div style="" class="sf_colsOut sf_1col_1_100 grid_lg_4 grid_12 stacked-half-margin">
+	    <div id="MainContent_TCD4298A3012_Col00" class="sf_colsIn sf_1col_1in_100"><span id="MainContent_C042"><div class="icon-feature"><div class="left"><span class="circle-icon icon-money-back"></span></div><h3>Money back</h3></div><div class="clear"></div>
+<p>You can use your cover to claim money back, up to set limits, towards essential health costs such as:</p>
+<ul class="tick large"><li>Opticians costs</li><li>Dental costs</li><li>Therapy treatments</li><li>Consultations & more</li></ul>
+</span>
+
+	    </div>
+	</div>
+	<div style="" class="sf_colsOut sf_1col_1_100 grid_lg_4 grid_12 stacked-half-margin">
+	    <div id="MainContent_TCD4298A3012_Col01" class="sf_colsIn sf_1col_1in_100"><span id="MainContent_C043"><div class="icon-feature"><div class="left"><span class="circle-icon icon-cash-payout"></span></div><h3>Cash payouts</h3></div><div class="clear"></div>
+<p>For hospital stays and day surgery (NHS and private).</p>
+<ul class="tick large"><li>Hospital stays</li><li>Day surgery</li><li>Having a baby/adoption</li></ul>
+</span>
+
+	    </div>
+	</div>
+	<div style="" class="sf_colsOut sf_1col_1_100 grid_lg_4 grid_12">
+	    <div id="MainContent_TCD4298A3012_Col02" class="sf_colsIn sf_1col_1in_100"><span id="MainContent_C044"><div class="icon-feature"><div class="left"><span class="circle-icon icon-health-wellbeing"></span></div><h3>Health and wellbeing services</h3></div><div class="clear"></div>
+<p>To help you stay fit and healthy, we’ve included a range of valuable health and wellbeing services too.</p>
+<ul class="tick large"><li>Telephone counselling & advice</li><li>Telephone access to a GP</li><li>Medical second opinion service</li><li>Discounted gym membership</li></ul>
+</span>
+
+	    </div>
+	</div>
+</div><div class="sf_cols double-margin">
+    <div class="sf_colsOut sf_1col_1_100 text-center">
+        <div id="MainContent_C053_Col00" class="sf_colsIn sf_1col_1in_100"><span id="MainContent_C052"><a id="MainContent_C052_ctl00_ctl00_hlButton" class="button button-primary" href="/individual/good4you-health-cash-plan">View the full list of plan benefits</a></span>
+            
+        </div>
+    </div>
+</div><span id="MainContent_C045">
+
+<div class="content-block">
+    <div class="grid_12">
+        <h2 class="">Health and wellbeing services</h2>
+    </div>
+    <div class="clear"></div>
+</div></span><div class="sf_cols double-margin">
+	<div style="" class="sf_colsOut sf_1col_1_100 grid_lg_3 grid_12 stacked-half-margin">
+	    <div id="MainContent_TCD4298A3015_Col00" class="sf_colsIn sf_1col_1in_100"><span id="MainContent_C046"><div class="icon-feature"><div class="left"><span class="circle-icon icon-doctorline"></span></div><h3>DoctorLine&trade;</h3></div><div class="clear"></div>
+<p>You can pick up the phone and arrange a call back from a practicing GP to discuss health issues and receive advice or diagnosis.</p>
+
+</span>
+
+	    </div>
+	</div>
+	<div style="" class="sf_colsOut sf_1col_1_100 grid_lg_3 grid_12 stacked-half-margin">
+	    <div id="MainContent_TCD4298A3015_Col01" class="sf_colsIn sf_1col_1in_100"><span id="MainContent_C047"><div class="icon-feature"><div class="left"><span class="circle-icon icon-best-doctors"></span></div><h3>Best Doctors<sup>&reg;</sup></h3></div><div class="clear"></div>
+<p>This expert second opinion medical service can help if you or your family are diagnosed with a worrying health condition.</p>
+
+</span>
+
+	    </div>
+	</div>
+	<div style="" class="sf_colsOut sf_1col_1_100 grid_lg_3 grid_12 stacked-half-margin">
+	    <div id="MainContent_TCD4298A3015_Col02" class="sf_colsIn sf_1col_1in_100"><span id="MainContent_C048"><div class="icon-feature"><div class="left"><span class="circle-icon icon-counselling"></span></div><h3>24 hour Counselling and Advice Line</h3></div><div class="clear"></div>
+<p>You and your family have 24 hour freephone access to confidential support and advice on medical, legal or domestic issues.</p>
+
+</span>
+
+	    </div>
+	</div>
+	<div style="" class="sf_colsOut sf_1col_1_100 grid_lg_3 grid_12">
+	    <div id="MainContent_TCD4298A3015_Col03" class="sf_colsIn sf_1col_1in_100"><span id="MainContent_C049"><div class="icon-feature"><div class="left"><span class="circle-icon icon-health-club"></span></div><h3>Health Club Concession</h3></div><div class="clear"></div>
+<p>Your cover also includes access to discounted membership at local gyms.</p>
+
+</span>
+
+	    </div>
+	</div>
+</div><span id="MainContent_C050">
+
+<div class="content-block">
+    <div class="grid_12">
+        <h2 class="">Why is our health cash plan good for you and your family?</h2>
+    </div>
+    <div class="clear"></div>
+</div></span><div class="sf_cols">
+	<div style="" class="sf_colsOut sf_1col_1_100 grid_lg_6 grid_12 nested-content">
+	    <div id="MainContent_TCD4298A3018_Col00" class="sf_colsIn sf_1col_1in_100"><div class='sfContentBlock'>
+
+<div class="grid_12 content-block">
+    <ul class="tick large"> <li> <strong><span>Affordable</span></strong> <p>From just 20p per day or &pound;6.20 a month, it&rsquo;s a small amount to invest in your health.</p> </li> <li> <strong><span>Cover for your children</span></strong> <p>If you have dependant children, they're covered on key benefits at no extra cost.</p> </li> <li> <strong><span>For your partner</span></strong> <p>Cover for your partner for Consultation and Home Care at no extra cost. Or they can take out their own cover.</p> </li> </ul>
+</div>
+
+
+</div>
+
+	    </div>
+	</div>
+	<div style="" class="sf_colsOut sf_1col_1_100 grid_lg_6 grid_12 nested-content">
+	    <div id="MainContent_TCD4298A3018_Col01" class="sf_colsIn sf_1col_1in_100"><div class='sfContentBlock'>
+
+<div class="grid_12 content-block">
+    <ul class="tick large"> <li> <strong><span>Keeps you happy and healthy</span></strong> <p>Our health cash plan has been designed to help keep you in the best possible shape, physically and mentally: from dental appointments to optical check ups and therapy treatments.</p> </li> <li> <strong><span>Peace of mind</span></strong> <p>It&rsquo;s good to know that, should the unexpected happen, you have access to diagnostic consultations and valuable health services included in your cover.</p> </li> <li> <strong><span>Award winning</span></strong> <p>We are proud to have won awards for our health plans, so you can be sure you're in safe hands.</p> </li> </ul>
+</div>
+
+
+</div>
+
+	    </div>
+	</div>
+</div>
+            
+        </div>
+    </div>
+</div><div class="sf_cols wrapper-white">
+    <div class="sf_colsOut sf_1col_1_100 container_12">
+        <div id="MainContent_TCD4298A3002_Col00" class="sf_colsIn sf_1col_1in_100"><span id="MainContent_C051">
+
+<div class="content-block">
+    <div class="grid_12">
+        <h2 class="">What we don't cover</h2>
+    </div>
+    <div class="clear"></div>
+</div></span><div class='sfContentBlock'>
+
+<div class="grid_12 content-block">
+    <p class="intro">There are a few exceptions to our health cover.</p> <ul class="tick large double-margin"> <li><strong>With the exception of optical and dental benefits, our plans provide cover for new medical conditions only</strong></li> <li><strong>Professional or semi professional sports people aren&rsquo;t covered</strong></li> <li><strong>You must be between 16-65 years old when you buy the cover</strong></li> </ul> <p>When you claim for any other benefit (except optical and dental) within the <strong>first 12 months of joining</strong> the plan, we&rsquo;ll ask you for a letter from your GP or consultant to confirm that they have recommended your treatment and it&rsquo;s not a pre-existing medical condition. Some GPs and medical practitioners may charge for this service and we&rsquo;re sorry that this isn&rsquo;t a cost that we can cover.</p>
+</div>
+
+
+</div>
+            
+        </div>
+    </div>
+</div><div class="sf_cols transparent-wrapper">
+    <div style="" class="sf_colsOut sf_1col_1_100 container_12">
+        <div id="MainContent_TCD4298A3006_Col00" class="sf_colsIn sf_1col_1in_100"><div class="generic-feature" style="background: #ffffff url('https://www.westfieldhealth.com/images/individuals/westfield-rewards972E66B31998.jpg?sfvrsn=2') top left / auto 100% no-repeat;">
+        <div class="grid_lg_4 grid_12 alpha omega desktop-only image"></div>
+    <div class="grid_lg_8 grid_12 secondary-color-1-background copy"> 
+        <h3>Helping your money go further with Westfield Rewards</h3>
+        <p><p>As a thank you for choosing us, we're giving you access to our exclusive rewards website,&nbsp; with special offers on all your favourite goods and services from over 450 leading online and high street retailers.</p>
+<p><a href="https://westfieldrewards.co.uk/" target="_blank" title="Westfield Rewards" class="white">westfieldrewards.co.uk</a></p></p>
+    </div>
+</div>
+            
+        </div>
+    </div>
+</div><div class="sf_cols single-margin transparent-wrapper">
+    <div style="" class="sf_colsOut sf_1col_1_100 container_12">
+        <div id="MainContent_TCD4298A3005_Col00" class="sf_colsIn sf_1col_1in_100"><div class="generic-feature" style="background: #ffffff url('https://www.westfieldhealth.com/images/individuals/special-offer.jpg?sfvrsn=6') top left / auto 100% no-repeat;">
+        <div class="grid_lg_4 grid_12 alpha omega desktop-only image"></div>
+    <div class="grid_lg_8 grid_12 secondary-color-2-background copy"> 
+        <h3>Join today</h3>
+        <p><p>Join today and we&rsquo;ll waive our usual waiting periods, so you can start claiming from the date your cover starts.</p></p>
+            <p><a href="/individual/good4you-health-cash-plan" class="button button-primary button-inline topMargin10">View the full list of plan benefits</a></p>
+    </div>
+</div>
+            
+        </div>
+    </div>
+</div><div class="sf_cols wrapper-white">
+    <div class="sf_colsOut sf_1col_1_100 container_12">
+        <div id="MainContent_TCD4298A3004_Col00" class="sf_colsIn sf_1col_1in_100"><div>
+	
+        <div class="grid_12">
+            <h2>Our customer stories</h2>
+        </div>
+        
+        <div class="grid_lg_4 grid_md_6 grid_12 testimonial">
+            <div class="grid_3 alpha">
+                <img id="ctl00_MainContent_ctl28_ctl00_ctl00_dynamicContentListView_ctrl0_imImage" src="https://www.westfieldhealth.com/images/testimonials/intermediary/testimonial-11.jpg?sfvrsn=4" alt="cust-testimonial-03" />
+            </div>
+            <div class="grid_9 quote-grey">
+                
+                <blockquote>
+                    "My last opticians bill was £75, so it was a relief to know I could claim the money back using my health cover and it was paid straight back into my bank account."<br />
+                    
+                </blockquote>
+            </div>
+        </div>
+    
+        <div class="grid_lg_4 grid_md_6 grid_12 testimonial">
+            <div class="grid_3 alpha">
+                <img id="ctl00_MainContent_ctl28_ctl00_ctl00_dynamicContentListView_ctrl1_imImage" src="https://www.westfieldhealth.com/images/testimonials/sleep-geek/testimonial-13.jpg?sfvrsn=6" alt="Testimonial" />
+            </div>
+            <div class="grid_9 quote-grey">
+                
+                <blockquote>
+                    "I used the consultation benefit to get an appointment at the hospital and was seen within a week. I'm really grateful for the cover."<br />
+                    
+                </blockquote>
+            </div>
+        </div>
+    
+        <div class="grid_lg_4 grid_md_6 grid_12 testimonial">
+            <div class="grid_3 alpha">
+                <img id="ctl00_MainContent_ctl28_ctl00_ctl00_dynamicContentListView_ctrl2_imImage" src="https://www.westfieldhealth.com/images/testimonials/sleep-geek/testimonial-14.jpg?sfvrsn=4" alt="Testimonial" />
+            </div>
+            <div class="grid_9 quote-grey">
+                
+                <blockquote>
+                    "I can’t recommend this health cover enough, it’s there so use it!"<br />
+                    
+                </blockquote>
+            </div>
+        </div>
+    
+    <input id="ctl00_MainContent_ctl28_ctl00_ctl00_dynamicContentListView_ClientState" name="ctl00_MainContent_ctl28_ctl00_ctl00_dynamicContentListView_ClientState" type="hidden" /><span id="ctl00_MainContent_ctl28_ctl00_ctl00_dynamicContentListView" style="display:none;"></span>
+
+</div>
+            
+        </div>
+    </div>
+</div><div class="sf_cols double-margin cta-wrapper">
+    <div class="sf_colsOut sf_1col_1_100 container_12">
+        <div id="MainContent_TCD4298A3003_Col00" class="sf_colsIn sf_1col_1in_100"><div class="contact-details-wrapper">
+  <div class="grid_12">
+    <h2>What's next?</h2>
+  </div>
+  <div class="grid_lg_6 grid_12 dotted-vertical-primary">
+    <div class="contact-details" style="overflow:hidden;">
+      <div class="contact-method">
+        <div class="left">
+          <span class="circle-icon medium-icon icon-email"></span>
+        </div>
+        <p class="contact-method-title"><span>Email us</span></p>
+        <p><a href="mailto:enquiries@westfieldhealth.com">enquiries@westfieldhealth.com</a></p>
+      </div>
+      <div class="clear"></div>
+      <div class="contact-method">
+        <div class="left">
+          <span class="circle-icon medium-icon icon-phone"></span>
+        </div>
+        <p class="contact-method-title"><span>Call us</span></p>
+        <p>0114 250 2000</p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="grid_lg_6 grid_12">
+    <div class="button-relative"><a href="/individual/hcp/good4you-health-cash-plan" class="button button-primary button-cta">View the full list of plan benefits</a></div>
+  </div>
+</div>
+            
+        </div>
+    </div>
+</div>
+        </div>
+        <div class="footer">
+            
+
+<div class="footer-primary-wrapper">
+    <div class="footer-primary">
+        <div class="container_12 footer-content-wrapper">
+            <div class="grid_lg_3 grid_md_6 grid_12 stacked-margin">
+                <img src="/Sitefinity/WebsiteTemplates/Westfield/App_Themes/Westfield/img/westfield-footer-logo-288.png"
+                    alt="Westfield Health logo" class="single-margin"
+					width="144" height="38" />
+                <p>
+                    We&rsquo;re a not for profit health insurance company and have been keeping hard
+                    working people fit and healthy since 1919.</p>
+            </div>
+            <div class="grid_lg_3 grid_md_6 grid_12 stacked-margin">
+                <p class="h5">Looking for health cover</p>
+                <div class="stacked-margin">
+                    <ul>
+                        <li><a href="/individual">For Individuals</a></li>
+                        <li><a href="/business">For Businesses</a></li>
+                        <li><a href="/intermediaries">For Intermediaries</a></li>
+                    </ul>
+                </div>
+                <p class="h5">Existing customers</p>
+                <ul class="no-margin">
+                    <li><a href="/my-westfield">Sign in to My Westfield</a></li>
+                    <li><a href="/my-westfield/health-cash-plans/download-claim-form">Download a claim form</a></li>
+                </ul>
+            </div>
+            <div class="grid_lg_3 grid_md_6 grid_12 stacked-margin">
+                <p class="h5">About Westfield Health</p>
+                <ul>
+                    <li><a href="/about-us/our-values-and-history">About us</a></li>
+                    <li><a href="/press-media/press">Press &amp; Media</a></li>
+                    <li><a href="/careers">Careers</a></li>
+                    <li><a href="/blog">Our Blog</a></li>
+                    <li><a href="/contact-us/contact-details">Contact us</a></li>
+                    <li><a href="/about-us/legal/cookies-policy">Cookies</a></li>
+                </ul>
+            </div>
+            <div class="grid_lg_3 grid_md_6 grid_12">
+                <p class="h5">Westfield Health</p>
+                <p>
+                    Westfield House<br />
+                    60 Charter Row<br />
+                    Sheffield<br />
+                    S1 3FZ
+                </p>
+                <p>
+                    <strong>0114 250 2000</strong><br />
+                    (8am-6pm, Mon-Fri except Christmas Eve and public holidays)</p>
+                <p>
+                    <strong><a href="mailto:enquiries@westfieldhealth.com">enquiries@westfieldhealth.com</a></strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+            
+
+<div class="footer-secondary-wrapper">
+  <div class="footer-secondary">
+    <div class="container_12 footer-content-wrapper">
+      <div class="grid_12">
+        <div class="grid_12 grid_lg_9">
+          <ul class="footer-links-secondary">
+            <li><a href="/about-us/legal/terms-of-use">Terms of use</a></li>
+            <li><a href="/about-us/legal/privacy-policy">Privacy policy</a></li>
+            <li><a href="/about-us/legal/cookies-policy">Cookies policy</a></li>
+            <li><a href="/sitemap">Site map</a></li>
+          </ul>
+          <div class="clear">
+          </div>
+          <p class="small">
+            Westfield Contributory Health Scheme Ltd (company number 303523), Westfield Health & Wellbeing Ltd (company number 9871093) and Westfield Employment Services Ltd (company number 9870326) are collectively referred to as Westfield Health and are registered in England & Wales.  Additionally Westfield Contributory Health Scheme Ltd is authorised by the <a href="http://www.bankofengland.co.uk/PRA/Pages/default.aspx" title="Prudential Regulation Authority">Prudential Regulation Authority</a> (PRA) and regulated by the <a href="http://www.fca.org.uk/" title="Financial Conduct Authority">Financial Conduct Authority</a> (FCA) and the Prudential Regulation Authority. Our financial services registration number is 202609.
+          </p>
+        </div>
+        <div class="grid_12 grid_lg_3">
+          <a href="https://twitter.com/westfieldhealth" title="Twitter" target="_blank"><span class="circle-icon small-icon white twitter"></span></a>
+          <a href="https://www.facebook.com/westfieldhealth" title="Facebook" target="_blank"><span class="circle-icon small-icon white facebook"></span></a>
+          <a href="http://www.linkedin.com/company/westfield-health" title="LinkedIn" target="_blank"><span class="circle-icon small-icon white linkedin"></span></a>
+          <a href="http://www.youtube.com/westfieldhealth1" title="YouTube" target="_blank"><span class="circle-icon small-icon white youtube"></span></a>
+          <a href="https://ww2.feefo.com/reviews/westfield-health" target="_blank"><img class="feefo-logo" alt="Feefo logo" border="0" src="https://api.feefo.com/api/logo?merchantidentifier=westfield-health&template=Service-Stars-White-150x38.png" title="Our customer Feefo rating"/></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+
+
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.5.1/pikaday.min.js"></script>
